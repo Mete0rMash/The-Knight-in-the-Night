@@ -20,4 +20,14 @@ public class menuPrincipal : MonoBehaviour
     {
         SceneManager.LoadScene("Escenario_1");
     }
+
+    public void CargameNivel(string nombreNivel)
+    {
+        SceneManager.LoadScene(nombreNivel);
+    }
+
+    public void Salir()
+    {
+        Application.Quit();
+    }
 }
