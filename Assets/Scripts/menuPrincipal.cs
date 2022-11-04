@@ -30,4 +30,9 @@ public class menuPrincipal : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void VolverAlMenu()
+    {
+        SceneManager.LoadScene("Menu_Principal");
+    }
 }
