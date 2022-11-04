@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e666a65d9a323ea4ea99a6f2f435d191
-      internalID: 639353526
+      spriteID: ce47abf19bf573444af2d9ff32d3a260
+      internalID: 268404930
       vertices: []
       indices: 
       edges: []
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e9c344e07b4fbc4f80a1c3c87d41ed3
-      internalID: 927969464
+      spriteID: 137d3637c75c41b48a07d5dd5e215920
+      internalID: 395718660
       vertices: []
       indices: 
       edges: []
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c330f6e842439a408ede5c4759a4ab1
-      internalID: -17613668
+      spriteID: 5c19c9432edb19747ab0dab24cae835e
+      internalID: -411608476
       vertices: []
       indices: 
       edges: []
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea07be7c5c4caaf4aa7c37010286f3fe
-      internalID: 432373657
+      spriteID: c7574ccd3296ed944826ba251d57fe5b
+      internalID: 1804920106
       vertices: []
       indices: 
       edges: []
@@ -199,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      _CrouchAttack_Edited_0: 639353526
-      _CrouchAttack_Edited_3: 432373657
-      _CrouchAttack_Edited_2: -17613668
-      _CrouchAttack_Edited_1: 927969464
+      _CrouchAttack_Edited_0: 268404930
+      _CrouchAttack_Edited_3: 1804920106
+      _CrouchAttack_Edited_2: -411608476
+      _CrouchAttack_Edited_1: 395718660
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

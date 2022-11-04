@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc7b312b3a76936438ae16dea1d39085
-      internalID: 301786985
+      spriteID: 3b8011ad1b6413f41b78197ad9b6e0ce
+      internalID: -272510258
       vertices: []
       indices: 
       edges: []
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bc1cf8d777759044bbb83efbfdb77c2
-      internalID: 1803303749
+      spriteID: 6a1c32118d4e06b439e136f376086d80
+      internalID: -1430338002
       vertices: []
       indices: 
       edges: []
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4f6f6ee19c1b0649bf28b63fde48b5b
-      internalID: 92738920
+      spriteID: 623afb83220f2ea45bf060c5cbfa714f
+      internalID: -1971631895
       vertices: []
       indices: 
       edges: []
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a19c8458c6f96a34bb688bf7244a9022
-      internalID: -1728226501
+      spriteID: 7dfa9d026b34e104b8c718057bd8df6d
+      internalID: -141007043
       vertices: []
       indices: 
       edges: []
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 051f220b75e71854fbea7a379faaafbb
-      internalID: -471608403
+      spriteID: 474869b8a3940444080c8c42f6c54112
+      internalID: -448096927
       vertices: []
       indices: 
       edges: []
@@ -224,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42d36c888c4d8514d93310f4060c3e89
-      internalID: -902549027
+      spriteID: 06e7f5c16c6bc564a90d80a0baab0f4a
+      internalID: -28083377
       vertices: []
       indices: 
       edges: []
@@ -241,12 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      _Attack2_Edited_3: -1728226501
-      _Attack2_Edited_0: 301786985
-      _Attack2_Edited_5: -902549027
-      _Attack2_Edited_1: 1803303749
-      _Attack2_Edited_2: 92738920
-      _Attack2_Edited_4: -471608403
+      _Attack2_Edited_3: -141007043
+      _Attack2_Edited_0: -272510258
+      _Attack2_Edited_5: -28083377
+      _Attack2_Edited_1: -1430338002
+      _Attack2_Edited_2: -1971631895
+      _Attack2_Edited_4: -448096927
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
