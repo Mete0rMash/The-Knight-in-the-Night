@@ -529,7 +529,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!1 &676952301
 GameObject:
@@ -1030,6 +1030,7 @@ GameObject:
   - component: {fileID: 782441626}
   - component: {fileID: 782441625}
   - component: {fileID: 782441627}
+  - component: {fileID: 782441628}
   m_Layer: 0
   m_Name: GameManagerMenu
   m_TagString: Untagged
@@ -1160,6 +1161,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &782441628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782441624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdbeeab336826ff4f984bd5ed0cddca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelOpciones: {fileID: 0}
 --- !u!1 &901126626
 GameObject:
   m_ObjectHideFlags: 0
