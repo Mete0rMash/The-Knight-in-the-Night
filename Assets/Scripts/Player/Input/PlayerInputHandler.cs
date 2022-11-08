@@ -6,35 +6,29 @@ using UnityEngine.SceneManagement;
 
 public class PlayerInputHandler : MonoBehaviour
 {
-    private Vector2 movementInput;
+    public Vector2 RawMovementInput { get; private set; }
+    public int NormInputX { get; private set; }
+    public int NormInputY { get; private set; }
 
+    #region Pause Menu Variables
     [SerializeField] private GameObject pantallaPausa;
     private bool juegoEnPausa = false;
+    #endregion
 
     public void OnMoveInput(InputAction.CallbackContext context)
     {
-        movementInput = context.ReadValue<Vector2>();
-        Debug.Log(movementInput);
+        RawMovementInput = context.ReadValue<Vector2>();
+
+        NormInputX = (int)(RawMovementInput * Vector2.right).normalized.x;
+        NormInputY = (int)(RawMovementInput * Vector2.up).normalized.y;
     }
 
     public void OnJumpInput(InputAction.CallbackContext context)
     {
-        if (context.started)
-        {
-            Debug.Log("Se apreto el boton de salto");
-        }
-
-        if (context.performed)
-        {
-            Debug.Log("Se esta manteniendo apretado el boton de salto");
-        }
-
-        if (context.canceled)
-        {
-            Debug.Log("Se solto el boton de salto");
-        }
+        
     }
 
+    #region Pause Menu Input
     public void OnPauseInput(InputAction.CallbackContext context)
     {
         if (context.started)
@@ -80,4 +74,5 @@ public class PlayerInputHandler : MonoBehaviour
     {
         SceneManager.LoadScene("Menu_Principal");
     }
+#endregion
 }
