@@ -3,15 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public enum Direction
-{
-    Up,
-    Down,
-    Right,
-    Left
-}
-
-
 public class Enemy : MonoBehaviour
 {
 
@@ -55,12 +46,13 @@ public class Enemy : MonoBehaviour
         if (GetComponent<Collider2D>().IsTouchingLayers(ground))
         {
             canMove = true;
+            States();
         }
         else
         {
             canMove = false;
         }
-        States();
+        
     }
 
 
