@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PausaManager : MonoBehaviour
 {
@@ -15,7 +15,7 @@ public class PausaManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (juegoEnPausa)
             {
@@ -41,5 +41,21 @@ public class PausaManager : MonoBehaviour
         juegoEnPausa = false;
         Time.timeScale = 1f;
         pantallaPausa.SetActive(false);
+    }
+
+    public void CerrarJuego() // por si queremos agregar opción de cerrar juego.
+    {
+        Debug.Log("Se cierra el juego");
+        Application.Quit();
+    }
+
+    public void MenuOpciones()
+    {
+        SceneManager.LoadScene("Opciones");
+    }
+
+    public void MenuPrincipal()
+    {
+        SceneManager.LoadScene("Menu_Principal");
     }
 }
