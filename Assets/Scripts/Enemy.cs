@@ -22,6 +22,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] private SpriteRenderer _spriteRenderer;
 
 
+    [SerializeField] private Collider2D forwarObj;
+
+
     public int speed;
 
     [SerializeField] private GameObject leftWall;   // para saber donde dar la vuelta y caminar al otro lado (buscar la forma de hacerlo sin necesidad de esto, con el layerMask)
@@ -67,6 +70,7 @@ public class Enemy : MonoBehaviour
       
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward, rangeSight);
         
+        /*
         if (hit.rigidbody.tag == "Player")
         {
             actualState = 1;
@@ -74,7 +78,7 @@ public class Enemy : MonoBehaviour
         else
         {
 
-        }
+        }*/
 
         switch (actualState)
         {
@@ -92,41 +96,28 @@ public class Enemy : MonoBehaviour
 
     private void PatrolState()
     {
-        if (!_spriteRenderer.flipX)
-        {
-            if (this.transform.position.x > leftWall.transform.position.x)
-            {
-                if (_spriteRenderer.flipX != false)
-                {
-                    _spriteRenderer.flipX = false;
-                }
-                if (GetComponent<Collider2D>().IsTouchingLayers(ground))
-                {
-                    this.transform.position += Vector3.left * speed * Time.deltaTime;
-                }
-            }
-            else _spriteRenderer.flipX = true;
-        }
-        else
-        {
-            
-            if (this.transform.position.x < rightWall.transform.position.x)
-            {
-            
-                if (_spriteRenderer.flipX != true)
-                {
-                    _spriteRenderer.flipX = true;
-                }
-                if (GetComponent<Collider2D>().IsTouchingLayers(ground))
-                {
-                    this.transform.position += Vector3.right * speed * Time.deltaTime;
-                }
-                
-            }
 
-            else _spriteRenderer.flipX = false;
-        }
+        //cuando la escala es negativa (< 0) entonces va hacia la derecha, si es positiva (> 0) va hacia la izquierda
 
+        if (forwarObj.IsTouchingLayers(ground))
+        {
+            if (this.transform.localScale.x > 0)
+            {
+                this.transform.position += Vector3.left * speed * Time.deltaTime;
+            }
+            else if (this.transform.localScale.x < 0)
+            {
+                this.transform.position += Vector3.right * speed * Time.deltaTime;
+            }
+        }
+        else InvertScale();
+
+    }
+
+
+    private void InvertScale()
+    {
+        transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
     }
 
     private void PersuitState(GameObject player)
