@@ -10,17 +10,12 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float damame = 5.0f;
     [SerializeField] private int rangeSight = 5;
     [SerializeField] private int actualState = 0;
-    [SerializeField] private SpriteRenderer _spriteRenderer;
-
+    
 
     [SerializeField] private Collider2D forwarObj;
 
 
     public int speed;
-
-    [SerializeField] private GameObject leftWall;   // para saber donde dar la vuelta y caminar al otro lado (buscar la forma de hacerlo sin necesidad de esto, con el layerMask)
-
-    [SerializeField] private GameObject rightWall;  // para saber donde dar la vuelta y caminar al otro lado (buscar la forma de hacerlo sin necesidad de esto, con el layerMask)
 
     public Animator anim;   //su animator
 
@@ -109,7 +104,7 @@ public class Enemy : MonoBehaviour
 
     private void InvertScale()
     {
-        transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+        transform.localScale = new Vector3(transform.localScale.x * - 1, transform.localScale.y, transform.localScale.z);
     }
 
     private void PersuitState(GameObject player)

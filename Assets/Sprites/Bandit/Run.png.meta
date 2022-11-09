@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 974f2eb7e56291f498343493a618c2d8
+guid: 1e318ed82ceefe84fa1782e94f0409a8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,118 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AttackFull_0
+      name: Run_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 9
-        width: 38
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 840d7b0159a17eb428e59d7c4ad2fe56
-      internalID: -1896842373
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AttackFull_1
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 9
-        width: 36
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ddb91ebea5a2c874ca3a3e55835847df
-      internalID: 1109629975
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AttackFull_2
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 9
-        width: 33
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ccec623710b19d41904832878c12710
-      internalID: 1383430047
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AttackFull_3
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 9
-        width: 24
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5569a28fe6c859f4486364d4594ad37a
-      internalID: -511864226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AttackFull_4
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 9
-        width: 24
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47bc36554e2b68f4a80d60fc37a61f76
-      internalID: 262249585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AttackFull_5
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 9
+        x: 14
+        y: 2
         width: 25
-        height: 45
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +119,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4351ff7354b0a70428b0a8c88781a37b
-      internalID: -1617181349
+      spriteID: 2fb1fedae534a73429138b13b78e2826
+      internalID: -283763227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AttackFull_6
+      name: Run_1
       rect:
         serializedVersion: 2
-        x: 251
-        y: 9
+        x: 58
+        y: 3
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b6ee02c5cab5f43886177c71cdfe5c
+      internalID: -1749025675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_2
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 2
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec040c123e985534f8ce7be2fc0dcc74
+      internalID: -1564624183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1
         width: 25
-        height: 45
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edcc530e428a9d44a9306aed67ec34af
-      internalID: -270640490
+      spriteID: 0e54da1a37a26954791b7d24e2ff9ad4
+      internalID: -852229554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AttackFull_7
+      name: Run_4
       rect:
         serializedVersion: 2
-        x: 291
-        y: 9
-        width: 24
-        height: 45
+        x: 209
+        y: 2
+        width: 20
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,8 +203,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23341cc10a350734f892c72acc42f616
-      internalID: -1298630267
+      spriteID: efbc177ff5c3a394a93ece764460d2e7
+      internalID: -2142574665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_5
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 4
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920e20e4562652f4490e8687a74397b6
+      internalID: -1082461394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_6
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 2
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c547616acae84b241bd97483b64a1dd8
+      internalID: 998509334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_7
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 2
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23f40feda28cc7459185fe6f0b84d5f
+      internalID: 238841804
       vertices: []
       indices: 
       edges: []
@@ -283,14 +283,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      AttackFull_4: 262249585
-      AttackFull_7: -1298630267
-      AttackFull_2: 1383430047
-      AttackFull_1: 1109629975
-      AttackFull_5: -1617181349
-      AttackFull_0: -1896842373
-      AttackFull_6: -270640490
-      AttackFull_3: -511864226
+      Run_6: 998509334
+      Run_2: -1564624183
+      Run_1: -1749025675
+      Run_3: -852229554
+      Run_7: 238841804
+      Run_4: -2142574665
+      Run_0: -283763227
+      Run_5: -1082461394
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
