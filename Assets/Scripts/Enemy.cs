@@ -22,7 +22,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Collider2D collider; //su collider
 
     [SerializeField] private LayerMask ground;  //el layer del suelo para poder moverse
-    
+
+    [SerializeField] private LayerMask wall; //el layer de las paredes para poder rebotar
 
     private bool canMove;
 
@@ -85,8 +86,13 @@ public class Enemy : MonoBehaviour
     {
 
         //cuando la escala es negativa (< 0) entonces va hacia la derecha, si es positiva (> 0) va hacia la izquierda
+        
 
-        if (forwarObj.IsTouchingLayers(ground))
+        if (forwarObj.IsTouchingLayers(wall))
+        {
+            InvertScale();
+        }        
+        else if (forwarObj.IsTouchingLayers(ground))
         {
             if (this.transform.localScale.x > 0)
             {
@@ -96,8 +102,14 @@ public class Enemy : MonoBehaviour
             {
                 this.transform.position += Vector3.right * speed * Time.deltaTime;
             }
-        }
-        else InvertScale();
+        } else InvertScale();
+        
+
+        
+        
+
+
+
 
     }
 
