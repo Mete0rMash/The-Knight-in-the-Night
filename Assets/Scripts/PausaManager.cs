@@ -51,7 +51,7 @@ public class PausaManager : MonoBehaviour
 
     public void MenuOpciones()
     {
-        SceneManager.LoadScene("Opciones");
+        SceneManager.LoadScene("Opciones_Menu_Pausa");
     }
 
     public void MenuPrincipal()
