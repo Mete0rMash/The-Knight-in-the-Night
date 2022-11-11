@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int actualState = 0;
     
 
-    [SerializeField] private Collider2D forwarObj;
+    [SerializeField] private Collider2D forwardObj;
 
 
     public int speed;
@@ -27,7 +27,9 @@ public class Enemy : MonoBehaviour
 
     private bool canMove;
 
-
+    [SerializeField] private float distance;
+    [SerializeField] private float distMin;
+    [SerializeField] private Vector3 distToMove;
 
     // Start is called before the first frame update
     void Start()
@@ -54,19 +56,35 @@ public class Enemy : MonoBehaviour
 
     private void States()
     {
+        /*
+        RaycastHit hitt;
 
+        if (Physics.Raycast(transform.position, Vector2.right, out hitt, rangeSight))
+        {
+            Debug.Log("choco con algo");
+            if (hitt.transform.tag == "Player")
+            {
+                Debug.Log("Player");
+            }
+        }
+        */
       
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward, rangeSight);
-        
-        /*
-        if (hit.rigidbody.tag == "Player")
-        {
-            actualState = 1;
-        }
-        else
+        if(hit.collider != null)
         {
 
-        }*/
+            Debug.Log(hit.collider.tag);
+            if (hit.collider.tag == "Player")
+            {
+                actualState = 1;
+            }
+            else
+            {
+
+            }
+
+        }
+
 
         switch (actualState)
         {
@@ -79,7 +97,8 @@ public class Enemy : MonoBehaviour
 
                 break;
         }
-        
+
+
     }
 
     private void PatrolState()
@@ -88,11 +107,11 @@ public class Enemy : MonoBehaviour
         //cuando la escala es negativa (< 0) entonces va hacia la derecha, si es positiva (> 0) va hacia la izquierda
         
 
-        if (forwarObj.IsTouchingLayers(wall))
+        if (forwardObj.IsTouchingLayers(wall))
         {
             InvertScale();
         }        
-        else if (forwarObj.IsTouchingLayers(ground))
+        else if (forwardObj.IsTouchingLayers(ground))
         {
             if (this.transform.localScale.x > 0)
             {
@@ -121,6 +140,19 @@ public class Enemy : MonoBehaviour
 
     private void PersuitState(GameObject player)
     {
+
+        distance = Vector2.Distance(this.transform.position, player.transform.position);
+        if(distance > distMin)
+        {
+            Debug.Log("persuiting player");
+            distToMove = player.transform.position - this.transform.position;
+            distToMove = distToMove.normalized;
+            this.transform.position += distToMove * speed * Time.deltaTime;
+        }
+        else
+        {
+            Debug.Log("attacking player");
+        }
 
     }
 

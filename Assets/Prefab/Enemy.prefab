@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -4532665690160926679}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,13 +104,19 @@ MonoBehaviour:
   damame: 5
   rangeSight: 5
   actualState: 0
-  forwarObj: {fileID: 1924494551534921403}
-  speed: 2
+  forwardObj: {fileID: 1924494551534921403}
+  speed: 3
   anim: {fileID: 0}
   collider: {fileID: -8180051471492607217}
   ground:
     serializedVersion: 2
     m_Bits: 128
+  wall:
+    serializedVersion: 2
+    m_Bits: 0
+  distance: 0
+  distMin: 1
+  distToMove: {x: 0, y: 0, z: 0}
 --- !u!61 &-8180051471492607217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -200,7 +206,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.053631097, y: -0.07612169}

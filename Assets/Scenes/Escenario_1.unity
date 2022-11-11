@@ -625,10 +625,25 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1982116309374725458, guid: 1a31c0687150b5b458f7945c6136593b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6953128708580618026, guid: 1a31c0687150b5b458f7945c6136593b,
         type: 3}
       propertyPath: speed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6953128708580618026, guid: 1a31c0687150b5b458f7945c6136593b,
+        type: 3}
+      propertyPath: distMin
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6953128708580618026, guid: 1a31c0687150b5b458f7945c6136593b,
+        type: 3}
+      propertyPath: rangeSight
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6953128708580618026, guid: 1a31c0687150b5b458f7945c6136593b,
         type: 3}
