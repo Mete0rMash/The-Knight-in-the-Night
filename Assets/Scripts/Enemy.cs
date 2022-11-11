@@ -8,11 +8,13 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private int life = 100;
     [SerializeField] private float damame = 5.0f;
-    [SerializeField] private int rangeSight = 5;
+    [SerializeField] private float rangeSight = 5.0f;
     [SerializeField] private int actualState = 0;
     
 
     [SerializeField] private Collider2D forwardObj;
+
+    [SerializeField] private GameObject player;
 
 
     public int speed;
@@ -25,22 +27,27 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private LayerMask wall; //el layer de las paredes para poder rebotar
 
+    [SerializeField] private LayerMask playerMask;
+
     private bool canMove;
 
     [SerializeField] private float distance;
     [SerializeField] private float distMin;
-    [SerializeField] private Vector3 distToMove;
+    [SerializeField] private Vector3 distToPlayer;
+
+    private RaycastHit2D hit;
+
+
+    [SerializeField] private Transform lineOfSight;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        rangeSight = rangeSight * -1;
     }
-
     // Update is called once per frame
     void Update()
     {
-
         if (GetComponent<Collider2D>().IsTouchingLayers(ground))
         {
             canMove = true;
@@ -49,43 +56,41 @@ public class Enemy : MonoBehaviour
         else
         {
             canMove = false;
-        }
-        
+        }        
     }
 
-
-    private void States()
-    {
-        /*
-        RaycastHit hitt;
-
-        if (Physics.Raycast(transform.position, Vector2.right, out hitt, rangeSight))
+    private bool CanSeePlayer(float _distance)
+    {        
+        bool val = false;        
+        float castDist = _distance;
+        Vector2 endPos = lineOfSight.position + Vector3.right * _distance;        
+        hit = Physics2D.Linecast(lineOfSight.position, endPos, 1 << LayerMask.NameToLayer("Player"));
+        Debug.DrawLine(lineOfSight.position, endPos, Color.red);
+        if (hit.collider != null)
         {
-            Debug.Log("choco con algo");
-            if (hitt.transform.tag == "Player")
+            Debug.Log(hit.collider.name);
+            if (hit.collider.gameObject.CompareTag("Player"))
             {
-                Debug.Log("Player");
-            }
-        }
-        */
-      
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward, rangeSight);
-        if(hit.collider != null)
-        {
-
-            Debug.Log(hit.collider.tag);
-            if (hit.collider.tag == "Player")
-            {
-                actualState = 1;
+                val = true;               
             }
             else
             {
-
+                val = false;
             }
-
+        }    
+        return val;
+    }
+    private void States()
+    {     
+        if (CanSeePlayer(rangeSight))
+        {
+            //PersuitState();
         }
-
-
+        else
+        {
+            PatrolState();
+        }
+        /*
         switch (actualState)
         {
             case 0:
@@ -93,14 +98,11 @@ public class Enemy : MonoBehaviour
 
                 break;
             case 1:
-                PersuitState(hit.rigidbody.gameObject);
-
+                //PersuitState(hit.rigidbody.gameObject);
                 break;
         }
-
-
+        */
     }
-
     private void PatrolState()
     {
 
@@ -136,18 +138,19 @@ public class Enemy : MonoBehaviour
     private void InvertScale()
     {
         transform.localScale = new Vector3(transform.localScale.x * - 1, transform.localScale.y, transform.localScale.z);
+        rangeSight = rangeSight * -1;
     }
 
-    private void PersuitState(GameObject player)
+    private void PersuitState()
     {
 
         distance = Vector2.Distance(this.transform.position, player.transform.position);
         if(distance > distMin)
         {
             Debug.Log("persuiting player");
-            distToMove = player.transform.position - this.transform.position;
-            distToMove = distToMove.normalized;
-            this.transform.position += distToMove * speed * Time.deltaTime;
+            distToPlayer = player.transform.position - this.transform.position;
+            distToPlayer = distToPlayer.normalized;
+            this.transform.position += distToPlayer * speed * Time.deltaTime;
         }
         else
         {
