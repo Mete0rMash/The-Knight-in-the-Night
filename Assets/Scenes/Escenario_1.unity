@@ -650,6 +650,11 @@ PrefabInstance:
       propertyPath: wall.m_Bits
       value: 256
       objectReference: {fileID: 0}
+    - target: {fileID: 6953128708580618026, guid: 1a31c0687150b5b458f7945c6136593b,
+        type: 3}
+      propertyPath: playerMask.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7920904768874944749, guid: 1a31c0687150b5b458f7945c6136593b,
         type: 3}
       propertyPath: m_RootOrder
