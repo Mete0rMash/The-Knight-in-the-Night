@@ -30,51 +30,60 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnMoveInput(InputAction.CallbackContext context)
     {
-        RawMovementInput = context.ReadValue<Vector2>();
+        if (!juegoEnPausa)
+        {
+            RawMovementInput = context.ReadValue<Vector2>();
 
-        if (Mathf.Abs(RawMovementInput.x) > 0.5f)
-        {
-            NormInputX = (int)(RawMovementInput * Vector2.right).normalized.x;
-        }
-        else 
-        { 
-            NormInputX = 0; 
-        }
+            if (Mathf.Abs(RawMovementInput.x) > 0.5f)
+            {
+                NormInputX = (int)(RawMovementInput * Vector2.right).normalized.x;
+            }
+            else
+            {
+                NormInputX = 0;
+            }
 
-        if (Mathf.Abs(RawMovementInput.y) > 0.5f)
-        {
-            NormInputY = (int)(RawMovementInput * Vector2.up).normalized.y;
-        }
-        else
-        {
-            NormInputY = 0;
+            if (Mathf.Abs(RawMovementInput.y) > 0.5f)
+            {
+                NormInputY = (int)(RawMovementInput * Vector2.up).normalized.y;
+            }
+            else
+            {
+                NormInputY = 0;
+            }
         }
     }
 
     public void OnJumpInput(InputAction.CallbackContext context)
     {
-        if (context.started)
+        if (!juegoEnPausa)
         {
-            JumpInput = true;
-            JumpInputStop = false;
-            jumpInputStartTime = Time.time;
-        }
+            if (context.started)
+            {
+                JumpInput = true;
+                JumpInputStop = false;
+                jumpInputStartTime = Time.time;
+            }
 
-        if (context.canceled)
-        {
-            JumpInputStop = true;
+            if (context.canceled)
+            {
+                JumpInputStop = true;
+            }
         }
     }
 
     public void OnGrabInput(InputAction.CallbackContext context)
     {
-        if (context.started)
+        if (!juegoEnPausa)
         {
-            GrabInput = true;
-        }
-        if (context.canceled)
-        {
-            GrabInput = false;
+            if (context.started)
+            {
+                GrabInput = true;
+            }
+            if (context.canceled)
+            {
+                GrabInput = false;
+            }
         }
     }
 
