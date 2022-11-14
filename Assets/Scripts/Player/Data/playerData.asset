@@ -21,8 +21,8 @@ MonoBehaviour:
   coyoteTime: 0.2
   variableJumpHeightMultiplier: 0.5
   wallSlideVelocity: 3
-  startOffset: {x: 0.5, y: 1.5}
-  stopOffset: {x: 0.1, y: 0.1}
+  startOffset: {x: 0.05, y: 1.2}
+  stopOffset: {x: 1, y: 1}
   groundCheckRadius: 0.2
   wallCheckDistance: 0.6
   whatIsGround:
