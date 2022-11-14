@@ -916,8 +916,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -37, y: 178}
-  m_SizeDelta: {x: 1003.5778, y: 76.7092}
+  m_AnchoredPosition: {x: -28.833618, y: 178}
+  m_SizeDelta: {x: 1019.9105, y: 76.7092}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &778335314
 MonoBehaviour:
@@ -939,9 +939,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'El Caballero De La Noche
-
-'
+  m_text: EL CABALLERO DE LA NOCHE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2c5e445d5d7401b459f1367dff9dd487, type: 2}
   m_sharedMaterial: {fileID: 5915466263756078325, guid: 2c5e445d5d7401b459f1367dff9dd487,
@@ -951,12 +949,12 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278612305
-  m_fontColor: {r: 0.3160344, g: 0.44313726, b: 0.023529422, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 1
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topLeft: {r: 0, g: 0, b: 0, a: 1}
     topRight: {r: 1, g: 1, b: 1, a: 1}
     bottomLeft: {r: 1, g: 1, b: 1, a: 1}
     bottomRight: {r: 1, g: 1, b: 1, a: 1}
@@ -1956,8 +1954,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -48, y: 88}
-  m_SizeDelta: {x: 484.6708, y: 80.6919}
+  m_AnchoredPosition: {x: -29, y: 92.9652}
+  m_SizeDelta: {x: 576.5281, y: 70.7614}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2051559626
 MonoBehaviour:
@@ -1979,7 +1977,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Menu Principal
+  m_text: MENU PRINCIPAL
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2c5e445d5d7401b459f1367dff9dd487, type: 2}
   m_sharedMaterial: {fileID: 5915466263756078325, guid: 2c5e445d5d7401b459f1367dff9dd487,
@@ -1989,8 +1987,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278600305
-  m_fontColor: {r: 0.44313726, g: 0.2591397, b: 0.023529422, a: 1}
+    rgba: 4278226943
+  m_fontColor: {r: 1, g: 0.5607477, b: 0, a: 1}
   m_enableVertexGradient: 1
   m_colorMode: 3
   m_fontColorGradient:
@@ -2007,8 +2005,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
