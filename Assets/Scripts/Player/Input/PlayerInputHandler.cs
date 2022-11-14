@@ -20,7 +20,9 @@ public class PlayerInputHandler : MonoBehaviour
 
     #region Pause Menu Variables
     [SerializeField] private GameObject pantallaPausa;
-    private bool juegoEnPausa = false;
+
+    [SerializeField]
+    private MenuData menuData;
     #endregion
 
     private void Update()
@@ -30,7 +32,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnMoveInput(InputAction.CallbackContext context)
     {
-        if (!juegoEnPausa)
+        if (!menuData.juegoEnPausa)
         {
             RawMovementInput = context.ReadValue<Vector2>();
 
@@ -56,7 +58,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnJumpInput(InputAction.CallbackContext context)
     {
-        if (!juegoEnPausa)
+        if (!menuData.juegoEnPausa)
         {
             if (context.started)
             {
@@ -74,7 +76,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnGrabInput(InputAction.CallbackContext context)
     {
-        if (!juegoEnPausa)
+        if (!menuData.juegoEnPausa)
         {
             if (context.started)
             {
@@ -97,12 +99,13 @@ public class PlayerInputHandler : MonoBehaviour
         }
     }
 
+
     #region Pause Menu Input
     public void OnPauseInput(InputAction.CallbackContext context)
     {
         if (context.started)
         {
-            if (juegoEnPausa)
+            if (menuData.juegoEnPausa)
             {
                 Reanudando();
             }
@@ -115,7 +118,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void Pausado()
     {
-        juegoEnPausa = true;
+        menuData.juegoEnPausa = true;
         Time.timeScale = 0f;
         pantallaPausa.SetActive(true);
 
@@ -123,7 +126,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void Reanudando()
     {
-        juegoEnPausa = false;
+        menuData.juegoEnPausa = false;
         Time.timeScale = 1f;
         pantallaPausa.SetActive(false);
     }
@@ -143,5 +146,5 @@ public class PlayerInputHandler : MonoBehaviour
     {
         SceneManager.LoadScene("Menu_Principal");
     }
-#endregion
+    #endregion
 }

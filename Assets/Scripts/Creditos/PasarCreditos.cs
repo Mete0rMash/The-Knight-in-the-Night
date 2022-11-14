@@ -5,19 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class PasarCreditos : MonoBehaviour
 {
+    [SerializeField]
+    private MenuData menuData;
+
     // Start is called before the first frame update
     void Start()
     {
+        menuData.creditos = true;
         Invoke("EsperaFinal", 58f);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            SceneManager.LoadScene("Menu_Principal");
-        }
     }
 
     public void EsperaFinal()

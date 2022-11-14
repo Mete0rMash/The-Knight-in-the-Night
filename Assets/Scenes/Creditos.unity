@@ -806,6 +806,8 @@ GameObject:
   - component: {fileID: 1624539296}
   - component: {fileID: 1624539297}
   - component: {fileID: 1624539298}
+  - component: {fileID: 1624539300}
+  - component: {fileID: 1624539299}
   m_Layer: 5
   m_Name: Creditos
   m_TagString: Untagged
@@ -869,6 +871,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f599ce4bf798f04984193bedc253158, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuData: {fileID: 11400000, guid: 822d96c396ede8a4dbee1f4025c28862, type: 2}
+--- !u!114 &1624539299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624539295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e0e18f9e3164b44a9b08ec1facb444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuData: {fileID: 11400000, guid: 822d96c396ede8a4dbee1f4025c28862, type: 2}
+--- !u!114 &1624539300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624539295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 203cf42621dfcb741b8c4984d120d8b8,
+    type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1624539299}
+        m_TargetAssemblyTypeName: MenuInputActions, Assembly-CSharp
+        m_MethodName: SkipCredits
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 752536a7-3bf4-4809-8b9f-81767f267240
+    m_ActionName: Navigation/Pause[/Keyboard/escape]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Navigation
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1677165625
 GameObject:
   m_ObjectHideFlags: 0

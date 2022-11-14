@@ -24,18 +24,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Pause",
+                    "name": "Grab",
                     "type": "Button",
-                    "id": "02bc9e36-9c31-44da-99e9-5629683a1a93",
+                    "id": "91d8304a-1bc6-401e-b75b-c0bf6045902d",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Grab",
+                    "name": "Pause",
                     "type": "Button",
-                    "id": "91d8304a-1bc6-401e-b75b-c0bf6045902d",
+                    "id": "8a522066-fdab-4518-86f9-e1c022a3d5a8",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -133,28 +133,6 @@
                 },
                 {
                     "name": "",
-                    "id": "9f4af627-bf80-4dbf-a1f2-162ad5aac5f3",
-                    "path": "<Keyboard>/escape",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard+Mouse",
-                    "action": "Pause",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "bf6f402f-830f-4ba7-b67d-90fc2fa3d3d4",
-                    "path": "<Gamepad>/start",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Pause",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "6f7e94c1-f534-4b3e-8097-d2da923d6338",
                     "path": "<Keyboard>/ctrl",
                     "interactions": "",
@@ -172,6 +150,28 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "63cfd1b2-f49e-44d7-96f6-9f51319a651f",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2d0396a8-9f9e-496c-a1b7-07bbf073eaf6",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -1,0 +1,45 @@
+{
+    "name": "Menu",
+    "maps": [
+        {
+            "name": "Navigation",
+            "id": "40a8636a-6f88-48cd-9497-4e6d9e037e89",
+            "actions": [
+                {
+                    "name": "Skip",
+                    "type": "Button",
+                    "id": "752536a7-3bf4-4809-8b9f-81767f267240",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a17ead1d-49cd-42f4-a90d-629284932d24",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Skip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "772c6b0e-2b5c-475e-8d20-88007f950d8b",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Skip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

@@ -1625,6 +1625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputHoldTime: 0.2
   pantallaPausa: {fileID: 1657558633}
+  menuData: {fileID: 11400000, guid: 822d96c396ede8a4dbee1f4025c28862, type: 2}
 --- !u!114 &1413811609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1687,22 +1688,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1413811608}
         m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
-        m_MethodName: OnPauseInput
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 02bc9e36-9c31-44da-99e9-5629683a1a93
-    m_ActionName: Gameplay/New action
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1413811608}
-        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
         m_MethodName: OnGrabInput
         m_Mode: 0
         m_Arguments:
@@ -1715,6 +1700,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 91d8304a-1bc6-401e-b75b-c0bf6045902d
     m_ActionName: Gameplay/Grab[/Keyboard/ctrl,/XInputControllerWindows/leftTrigger]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1413811608}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
+        m_MethodName: OnPauseInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 8a522066-fdab-4518-86f9-e1c022a3d5a8
+    m_ActionName: Gameplay/Pause[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
@@ -2112,7 +2113,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1588281935
 MonoBehaviour:
   m_ObjectHideFlags: 0
