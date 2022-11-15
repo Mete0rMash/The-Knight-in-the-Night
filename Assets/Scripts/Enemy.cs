@@ -131,10 +131,14 @@ public class Enemy : MonoBehaviour
             if (!facingRight)
             {
                 this.transform.position += Vector3.left * speed * Time.deltaTime;
+                anim.SetBool("isMoving", true);
+                anim.SetBool("isCloser", false);
             }
             else if (facingRight)
             {
                 this.transform.position += Vector3.right * speed * Time.deltaTime;
+                anim.SetBool("isMoving", true);
+                anim.SetBool("isCloser", false);
             }
         } else InvertScale();
     }
@@ -151,11 +155,16 @@ public class Enemy : MonoBehaviour
         {            
             distToPlayerV3 = player.transform.position - this.transform.position;
             distToPlayerV3 = distToPlayerV3.normalized;
-            this.transform.position += distToPlayerV3 * speed * Time.deltaTime;            
+            this.transform.position += distToPlayerV3 * speed * Time.deltaTime;
+            anim.SetBool("isMoving", true);
+            anim.SetBool("isCloser", false);
         }
         else
         {            
             Debug.Log("attacking player");
+            anim.SetBool("isMoving", false);
+            anim.SetBool("isCloser", true);
+            //anim.SetTrigger("isAttacking");
         }
         if (this.transform.position.x < player.transform.position.x) //si la posicion del enemigo es mas grande que la posicion del player, entonces el enemigo esta a la derecha del player, si es menor, entonces a la derecha
         {
@@ -175,9 +184,11 @@ public class Enemy : MonoBehaviour
     public void GetDamage(float _damage)
     {
         life = life - (int)_damage;
+        anim.SetTrigger("getHit");
 
         if(life <= 0)
         {
+            anim.SetBool("isDead", true);
             Destroy(this.gameObject);
         }
     }
