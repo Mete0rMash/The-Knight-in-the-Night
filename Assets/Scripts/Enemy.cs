@@ -31,9 +31,11 @@ public class Enemy : MonoBehaviour
 
     private bool canMove;
 
-    [SerializeField] private float distance;
+    [SerializeField] private float distanceToPlayer;
     [SerializeField] private float distMin;
-    [SerializeField] private Vector3 distToPlayer;
+    [SerializeField] private Vector3 distToPlayerV3;
+    bool canDetectPlayer = false;
+
 
     private RaycastHit2D hit;
 
@@ -44,6 +46,10 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         rangeSight = rangeSight * -1;
+        if(player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+        }
     }
     // Update is called once per frame
     void Update()
@@ -59,30 +65,80 @@ public class Enemy : MonoBehaviour
         }        
     }
 
-    private bool CanSeePlayer(float _distance)
-    {        
-        bool val = false;        
-        float castDist = _distance;
-        Vector2 endPos = lineOfSight.position + Vector3.right * _distance;        
-        hit = Physics2D.Linecast(lineOfSight.position, endPos, 1 << LayerMask.NameToLayer("Player"));
-        Debug.DrawLine(lineOfSight.position, endPos, Color.red);
-        if (hit.collider != null)
-        {
-            Debug.Log(hit.collider.name);
-            if (hit.collider.gameObject.CompareTag("Player"))
+    private bool CanSeePlayer()
+    {
+        bool val = false;
+        float castDist = rangeSight;
+        Vector2 endPos = lineOfSight.position + Vector3.right * rangeSight;
+
+        hit = Physics2D.Linecast(lineOfSight.position, endPos, 1 << LayerMask.NameToLayer("Wall"));
+        if (hit.collider != null && !canDetectPlayer)
+        {            
+            distanceToPlayer = Vector2.Distance(this.transform.position, player.transform.position);
+            float distToColl = Vector2.Distance(this.transform.position, hit.collider.transform.position);
+
+            if (rangeSight < 0) //me fijo si el rango de vision es positivo, porque cambia depende hacia donde mire. si mira hacia la izquierda, es positivo, si mira hacia la derecha es negativo
             {
-                val = true;               
+                
+                if (distanceToPlayer > distToColl)
+                {
+                    //el player esta atras de un objeto, no lo puede ver
+                    
+                    canDetectPlayer = false;
+                }
+                else
+                {
+                    //podria ver al player
+                    
+                    canDetectPlayer = true;
+                }
+            }
+            else if (rangeSight > 0)
+            {               
+                
+                if (distanceToPlayer > distToColl)
+                {                    
+                    //el player esta atras de un objeto, no lo puede ver
+                    canDetectPlayer = false;
+                }
+                else
+                {
+                    //podria ver al player
+                    canDetectPlayer = true;
+                }                
+            }            
+        }
+        else
+        {
+
+            hit = Physics2D.Linecast(lineOfSight.position, endPos, 1 << LayerMask.NameToLayer("Player"));
+
+            if (hit.collider != null)
+            {
+
+                Debug.Log(hit.collider.name);
+                if (hit.collider.gameObject.CompareTag("Player"))
+                {
+                    val = true;
+                }
+                else
+                {
+                    val = false;
+                }
+                Debug.DrawLine(lineOfSight.position, hit.point, Color.red);
             }
             else
             {
-                val = false;
+                Debug.DrawLine(lineOfSight.position, endPos, Color.blue);
+                canDetectPlayer = false;
             }
-        }    
+        }
         return val;
     }
+
     private void States()
     {     
-        if (CanSeePlayer(rangeSight))
+        if (CanSeePlayer())
         {
             //PersuitState();
         }
@@ -144,13 +200,13 @@ public class Enemy : MonoBehaviour
     private void PersuitState()
     {
 
-        distance = Vector2.Distance(this.transform.position, player.transform.position);
-        if(distance > distMin)
+        distanceToPlayer = Vector2.Distance(this.transform.position, player.transform.position);
+        if(distanceToPlayer > distMin)
         {
             Debug.Log("persuiting player");
-            distToPlayer = player.transform.position - this.transform.position;
-            distToPlayer = distToPlayer.normalized;
-            this.transform.position += distToPlayer * speed * Time.deltaTime;
+            distToPlayerV3 = player.transform.position - this.transform.position;
+            distToPlayerV3 = distToPlayerV3.normalized;
+            this.transform.position += distToPlayerV3 * speed * Time.deltaTime;
         }
         else
         {
