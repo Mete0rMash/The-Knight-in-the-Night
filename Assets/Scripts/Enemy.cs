@@ -5,44 +5,26 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-
     [SerializeField] private int life = 100;
     [SerializeField] private float damame = 5.0f;
     [SerializeField] private float rangeSight = 5.0f;
-    [SerializeField] private int actualState = 0;
-    
-
+    [SerializeField] private bool persuiting = false;   
     [SerializeField] private Collider2D forwardObj;
-
     [SerializeField] private GameObject player;
-
-
     public int speed;
-
     public Animator anim;   //su animator
-
     [SerializeField] private Collider2D collider; //su collider
-
     [SerializeField] private LayerMask ground;  //el layer del suelo para poder moverse
-
     [SerializeField] private LayerMask wall; //el layer de las paredes para poder rebotar
-
     [SerializeField] private LayerMask playerMask;
-
     private bool canMove;
-
     [SerializeField] private float distanceToPlayer;
     [SerializeField] private float distMin;
     [SerializeField] private Vector3 distToPlayerV3;
+    [SerializeField] private bool facingRight;
     bool canDetectPlayer = false;
-
-
     private RaycastHit2D hit;
-
-
     [SerializeField] private Transform lineOfSight;
-
-    // Start is called before the first frame update
     void Start()
     {
         rangeSight = rangeSight * -1;
@@ -51,7 +33,6 @@ public class Enemy : MonoBehaviour
             player = GameObject.FindGameObjectWithTag("Player");
         }
     }
-    // Update is called once per frame
     void Update()
     {
         if (GetComponent<Collider2D>().IsTouchingLayers(ground))
@@ -64,38 +45,31 @@ public class Enemy : MonoBehaviour
             canMove = false;
         }        
     }
-
     private bool CanSeePlayer()
     {
         bool val = false;
         float castDist = rangeSight;
         Vector2 endPos = lineOfSight.position + Vector3.right * rangeSight;
-
         hit = Physics2D.Linecast(lineOfSight.position, endPos, 1 << LayerMask.NameToLayer("Wall"));
         if (hit.collider != null && !canDetectPlayer)
         {            
             distanceToPlayer = Vector2.Distance(this.transform.position, player.transform.position);
             float distToColl = Vector2.Distance(this.transform.position, hit.collider.transform.position);
-
-            if (rangeSight < 0) //me fijo si el rango de vision es positivo, porque cambia depende hacia donde mire. si mira hacia la izquierda, es positivo, si mira hacia la derecha es negativo
-            {
-                
+            if (!facingRight)
+            {                
                 if (distanceToPlayer > distToColl)
                 {
-                    //el player esta atras de un objeto, no lo puede ver
-                    
+                    //el player esta atras de un objeto, no lo puede ver                    
                     canDetectPlayer = false;
                 }
                 else
                 {
-                    //podria ver al player
-                    
+                    //podria ver al player                    
                     canDetectPlayer = true;
                 }
             }
-            else if (rangeSight > 0)
-            {               
-                
+            else if (facingRight)
+            {  
                 if (distanceToPlayer > distToColl)
                 {                    
                     //el player esta atras de un objeto, no lo puede ver
@@ -110,13 +84,10 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-
             hit = Physics2D.Linecast(lineOfSight.position, endPos, 1 << LayerMask.NameToLayer("Player"));
 
             if (hit.collider != null)
-            {
-
-                Debug.Log(hit.collider.name);
+            {                
                 if (hit.collider.gameObject.CompareTag("Player"))
                 {
                     val = true;
@@ -135,90 +106,72 @@ public class Enemy : MonoBehaviour
         }
         return val;
     }
-
     private void States()
-    {     
-        if (CanSeePlayer())
+    {        
+        if (persuiting)
         {
-            //PersuitState();
+            PersuitState();
         }
         else
         {
+            
             PatrolState();
+            persuiting = CanSeePlayer();
         }
-        /*
-        switch (actualState)
-        {
-            case 0:
-                PatrolState();
-
-                break;
-            case 1:
-                //PersuitState(hit.rigidbody.gameObject);
-                break;
-        }
-        */
     }
     private void PatrolState()
     {
-
         //cuando la escala es negativa (< 0) entonces va hacia la derecha, si es positiva (> 0) va hacia la izquierda
-        
-
         if (forwardObj.IsTouchingLayers(wall))
         {
             InvertScale();
         }        
         else if (forwardObj.IsTouchingLayers(ground))
         {
-            if (this.transform.localScale.x > 0)
+            if (!facingRight)
             {
                 this.transform.position += Vector3.left * speed * Time.deltaTime;
             }
-            else if (this.transform.localScale.x < 0)
+            else if (facingRight)
             {
                 this.transform.position += Vector3.right * speed * Time.deltaTime;
             }
         } else InvertScale();
-        
-
-        
-        
-
-
-
-
     }
-
-
     private void InvertScale()
     {
         transform.localScale = new Vector3(transform.localScale.x * - 1, transform.localScale.y, transform.localScale.z);
         rangeSight = rangeSight * -1;
+        facingRight = !facingRight;
     }
-
     private void PersuitState()
     {
-
-        distanceToPlayer = Vector2.Distance(this.transform.position, player.transform.position);
+        distanceToPlayer = Vector2.Distance(this.transform.position, player.transform.position);        
         if(distanceToPlayer > distMin)
-        {
-            Debug.Log("persuiting player");
+        {            
             distToPlayerV3 = player.transform.position - this.transform.position;
             distToPlayerV3 = distToPlayerV3.normalized;
-            this.transform.position += distToPlayerV3 * speed * Time.deltaTime;
+            this.transform.position += distToPlayerV3 * speed * Time.deltaTime;            
         }
         else
-        {
+        {            
             Debug.Log("attacking player");
         }
-
+        if (this.transform.position.x < player.transform.position.x) //si la posicion del enemigo es mas grande que la posicion del player, entonces el enemigo esta a la derecha del player, si es menor, entonces a la derecha
+        {
+            if (!facingRight)
+            {
+                InvertScale();
+            }  
+        }
+        else if (this.transform.position.x > player.transform.position.x)
+        {
+            if (facingRight)
+            {
+                InvertScale();
+            }
+        }
     }
-
-
-
-
-
     public void GetDamage(float _damage)
     {
         life = life - (int)_damage;
