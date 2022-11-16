@@ -23,6 +23,14 @@ MonoBehaviour:
   wallSlideVelocity: 3
   startOffset: {x: 0.05, y: 1.2}
   stopOffset: {x: 1, y: 1}
+  rollCooldown: 0.5
+  maxHoldTime: 1
+  holdTimeScale: 0.25
+  rollTime: 0.7
+  rollVelocity: 12
+  drag: 15
+  rollEndYMultiplier: 0.2
+  distBetweenAfterImages: 0.5
   groundCheckRadius: 0.2
   wallCheckDistance: 0.6
   whatIsGround:
