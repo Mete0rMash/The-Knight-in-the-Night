@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Collider2D forwardObj;
     [SerializeField] private GameObject player;
     public int speed;
-    public Animator anim;   //su animator
+    [SerializeField] private Animator anim;   //su animator
     [SerializeField] private Collider2D collider; //su collider
     [SerializeField] private LayerMask ground;  //el layer del suelo para poder moverse
     [SerializeField] private LayerMask wall; //el layer de las paredes para poder rebotar
@@ -32,13 +32,20 @@ public class Enemy : MonoBehaviour
         {
             player = GameObject.FindGameObjectWithTag("Player");
         }
+        if(anim == null)
+        {
+            anim = this.gameObject.GetComponent<Animator>();
+        }
     }
     void Update()
     {
         if (GetComponent<Collider2D>().IsTouchingLayers(ground))
         {
-            canMove = true;
-            States();
+            if (canMove)
+            {
+                States();
+            }
+            
         }
         else
         {
@@ -161,10 +168,12 @@ public class Enemy : MonoBehaviour
         }
         else
         {            
+            //canMove = false;
             Debug.Log("attacking player");
             anim.SetBool("isMoving", false);
             anim.SetBool("isCloser", true);
             //anim.SetTrigger("isAttacking");
+            //canMove = true;
         }
         if (this.transform.position.x < player.transform.position.x) //si la posicion del enemigo es mas grande que la posicion del player, entonces el enemigo esta a la derecha del player, si es menor, entonces a la derecha
         {
@@ -183,13 +192,16 @@ public class Enemy : MonoBehaviour
     }
     public void GetDamage(float _damage)
     {
+
+        //canMove = false;
         life = life - (int)_damage;
         anim.SetTrigger("getHit");
 
         if(life <= 0)
         {
-            anim.SetBool("isDead", true);
+            anim.SetBool("isDead", true);            
             Destroy(this.gameObject);
         }
+        //canMove = true;
     }
 }
