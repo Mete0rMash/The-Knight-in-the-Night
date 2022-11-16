@@ -6,6 +6,7 @@ TagManager:
   tags:
   - opciones
   - Enemy
+  - MenuMusic
   layers:
   - Default
   - TransparentFX
