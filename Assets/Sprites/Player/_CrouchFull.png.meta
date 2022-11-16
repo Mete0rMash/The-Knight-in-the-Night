@@ -108,12 +108,12 @@ TextureImporter:
       name: _CrouchFull_0
       rect:
         serializedVersion: 2
-        x: 43
+        x: 0
         y: 0
-        width: 29
-        height: 31
+        width: 120
+        height: 80
       alignment: 9
-      pivot: {x: 0.5, y: 0.62}
+      pivot: {x: 0.5, y: 0.23}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -129,12 +129,12 @@ TextureImporter:
       name: _CrouchFull_1
       rect:
         serializedVersion: 2
-        x: 163
+        x: 120
         y: 0
-        width: 29
-        height: 27
+        width: 120
+        height: 80
       alignment: 9
-      pivot: {x: 0.5, y: 0.72}
+      pivot: {x: 0.5, y: 0.23}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,12 +150,12 @@ TextureImporter:
       name: _CrouchFull_2
       rect:
         serializedVersion: 2
-        x: 283
+        x: 240
         y: 0
-        width: 29
-        height: 31
+        width: 120
+        height: 80
       alignment: 9
-      pivot: {x: 0.5, y: 0.62}
+      pivot: {x: 0.5, y: 0.23}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
