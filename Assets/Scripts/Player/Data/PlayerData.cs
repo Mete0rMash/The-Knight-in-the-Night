@@ -28,6 +28,16 @@ public class PlayerData : ScriptableObject
     public Vector2 startOffset;
     public Vector2 stopOffset;
 
+    [Header("Roll State")]
+    public float rollCooldown = .5f;
+    public float maxHoldTime = 1f;
+    public float holdTimeScale = .25f;
+    public float rollTime = 0.2f;
+    public float rollVelocity = 30f;
+    public float drag = 10f;
+    public float rollEndYMultiplier = 0.2f;
+    public float distBetweenAfterImages = .5f;
+
     [Header("Check Variables")]
     public float groundCheckRadius = 0.3f;
     public float wallCheckDistance = 0.5f;

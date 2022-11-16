@@ -17,6 +17,7 @@ public class PlayerInAirState : PlayerState
     private bool isJumping;
     private bool grabInput;
     private bool isTouchingLedge;
+    private bool rollInput;
 
     private float startWallJumpCoyoteTime;
 
@@ -73,6 +74,7 @@ public class PlayerInAirState : PlayerState
         jumpInput = player.InputHandler.JumpInput;
         jumpInputStop = player.InputHandler.JumpInputStop;
         grabInput = player.InputHandler.GrabInput;
+        rollInput = player.InputHandler.RollInput;
 
         CheckJumpMultiplier();
 
@@ -103,6 +105,10 @@ public class PlayerInAirState : PlayerState
         else if (isTouchingWall && xInput == player.FacingDirection && player.CurrentVelocity.y <= 0)
         {
             stateMachine.ChangeState(player.WallSlideState);
+        }
+        else if (rollInput && player.DashState.CheckIfCanRoll())
+        {
+            stateMachine.ChangeState(player.DashState);
         }
         else
         {
