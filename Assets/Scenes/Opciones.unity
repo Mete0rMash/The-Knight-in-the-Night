@@ -774,6 +774,7 @@ GameObject:
   - component: {fileID: 327691699}
   - component: {fileID: 327691698}
   - component: {fileID: 327691697}
+  - component: {fileID: 327691700}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -866,6 +867,21 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
+--- !u!114 &327691700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327691695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae90ce9daa998ac41b1c4e9703051388, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brilloSlider: {fileID: 1321264619}
+  sliderValue: 0
+  paneldeBrillo: {fileID: 0}
 --- !u!1 &593717270
 GameObject:
   m_ObjectHideFlags: 0
