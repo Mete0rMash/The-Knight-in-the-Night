@@ -879,9 +879,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae90ce9daa998ac41b1c4e9703051388, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brilloSlider: {fileID: 1321264619}
-  sliderValue: 0
-  paneldeBrillo: {fileID: 0}
 --- !u!1 &593717270
 GameObject:
   m_ObjectHideFlags: 0
