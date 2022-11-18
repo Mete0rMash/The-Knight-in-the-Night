@@ -346,7 +346,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 127224300}
-  - component: {fileID: 127224299}
   - component: {fileID: 127224301}
   m_Layer: 0
   m_Name: ObjetosEntreLasEscenas
@@ -355,18 +354,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &127224299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 127224298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 545de1dd45a420045bb7e0cd608189a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &127224300
 Transform:
   m_ObjectHideFlags: 0
