@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private LayerMask ground;  //el layer del suelo para poder moverse
     [SerializeField] private LayerMask wall; //el layer de las paredes para poder rebotar
     [SerializeField] private LayerMask playerMask;
-    private bool canMove;
+    public bool canMove = true;
     [SerializeField] private float distanceToPlayer;
     [SerializeField] private float distMin;
     [SerializeField] private Vector3 distToPlayerV3;
@@ -49,7 +49,7 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            canMove = false;
+            //canMove = false;
         }        
     }
     private bool CanSeePlayer()
@@ -120,8 +120,7 @@ public class Enemy : MonoBehaviour
             PersuitState();
         }
         else
-        {
-            
+        {            
             PatrolState();
             persuiting = CanSeePlayer();
         }

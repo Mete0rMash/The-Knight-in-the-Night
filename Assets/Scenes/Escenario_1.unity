@@ -1005,8 +1005,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6953128708580618026, guid: 1a31c0687150b5b458f7945c6136593b,
         type: 3}
+      propertyPath: persuiting
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6953128708580618026, guid: 1a31c0687150b5b458f7945c6136593b,
+        type: 3}
       propertyPath: rangeSight
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6953128708580618026, guid: 1a31c0687150b5b458f7945c6136593b,
+        type: 3}
+      propertyPath: facingRight
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6953128708580618026, guid: 1a31c0687150b5b458f7945c6136593b,
         type: 3}
@@ -2333,7 +2343,7 @@ GameObject:
   - component: {fileID: 1520990271}
   - component: {fileID: 1520990270}
   - component: {fileID: 1520990269}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Static Sprite (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3801,7 +3811,7 @@ GameObject:
   - component: {fileID: 2096514712}
   - component: {fileID: 2096514711}
   - component: {fileID: 2096514710}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Static Sprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3935,7 +3945,7 @@ GameObject:
   - component: {fileID: 2123255481}
   - component: {fileID: 2123255480}
   - component: {fileID: 2123255479}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Static Sprite (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
