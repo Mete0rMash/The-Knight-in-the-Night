@@ -44,6 +44,18 @@ public class DontDestroyAudio : MonoBehaviour
             DontDestroyAudio.instance.GetComponent<AudioSource>().Pause();
         }
 
+        //Aca abajo esta el arreglo que hice
+
+        /*
+        else if(SceneManager.GetActiveScene().name == "Menu_Principal")   // me fijo que sea el menu
+        {            
+            if (!DontDestroyAudio.instance.GetComponent<AudioSource>().isPlaying)   // me fijo que no se este reproduciendo
+            {                
+                DontDestroyAudio.instance.GetComponent<AudioSource>().Play(); // reprodusco
+            }
+        }
+        */
+
         //Vuelve a reproducir el tema "Ver bien porq no funca... tal vez lo borre."
         /*if (SceneManager.GetActiveScene().name == "Menu_Principal")
         {
