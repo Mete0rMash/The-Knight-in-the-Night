@@ -7,6 +7,7 @@ public class PausaManager : MonoBehaviour
 {
     [SerializeField] private GameObject pantallaPausa;
     private bool juegoEnPausa = false;
+    private int escenaActualIndex;
     void Start()
     {
         
@@ -57,7 +58,9 @@ public class PausaManager : MonoBehaviour
 
     public void MenuPrincipal()
     {
+        escenaActualIndex = SceneManager.GetActiveScene().buildIndex; //probando cambios para el botón continuar, gracias a esto carga escena del menu principal
         SceneManager.LoadScene("Menu_Principal");
         Time.timeScale = 1f;
-    }
+        PlayerPrefs.SetInt("EscenaGuardada", escenaActualIndex);//Setea la Escena guardada
+    }   //Todo completamente implementado, falta que al continuar se conserve las posiciones, el boton continua el juego.
 }
