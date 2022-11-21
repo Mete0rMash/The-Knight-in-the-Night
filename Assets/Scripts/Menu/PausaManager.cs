@@ -8,10 +8,7 @@ public class PausaManager : MonoBehaviour
     [SerializeField] private GameObject pantallaPausa;
     private bool juegoEnPausa = false;
     private int escenaActualIndex;
-    void Start()
-    {
-        
-    }
+    
 
     // Update is called once per frame
     void Update()

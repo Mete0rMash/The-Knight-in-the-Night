@@ -1,16 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DontDestroyBrillo : MonoBehaviour
 {
+    private static DontDestroyBrillo instance;
+    //[SerializeField] private GameObject pantallaBrillo;
+    //public Image Panel;
+    //public GameObject brilloPanel;
+
+    /*private void Start()
+    {
+        brilloPanel = FindObjectOfType<DontDestroyBrillo>().gameObject;
+        
+    }*/ //borrar
+
     private void Awake()
     {
-        GameObject[] musicObj = GameObject.FindGameObjectsWithTag("BrilloMenu");
-        if(musicObj.Length > 1)
+        if (instance != null)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
-        DontDestroyOnLoad(this.gameObject);
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+            
+        }
+
     }
+
+    /*private void Update()
+    {
+        pantallaBrillo.SetActive(true);//comentar, no creo que ande
+    }*/
 }
