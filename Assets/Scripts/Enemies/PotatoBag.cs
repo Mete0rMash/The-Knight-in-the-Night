@@ -6,27 +6,12 @@ using UnityEngine.UI;
 public class PotatoBag : MonoBehaviour
 {
 
-
     [SerializeField] private Text damageIndicator;
+
+    [SerializeField] private GameObject gameText;
      
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        if(damageIndicator == null)
-        {
-            damageIndicator = FindObjectOfType<Text>();
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void GetDamage(int damage)
-    {
-        damageIndicator.text = damage.ToString();
+    {       
+        gameText.GetComponent<TextMesh>().text = damage.ToString();
     }
 }
