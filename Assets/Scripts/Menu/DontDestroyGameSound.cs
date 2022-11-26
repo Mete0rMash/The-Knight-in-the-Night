@@ -36,8 +36,9 @@ public class DontDestroyGameSound : MonoBehaviour
             {
                 DontDestroyGameSound.instance.GetComponent<AudioSource>().Play(); // reproduzco
             }
-        }
 
+           
+        }
     }
 }
 
