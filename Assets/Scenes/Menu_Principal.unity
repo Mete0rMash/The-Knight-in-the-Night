@@ -1219,7 +1219,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 843399819}
-  - component: {fileID: 843399820}
   m_Layer: 0
   m_Name: ManagerBrilloFondo
   m_TagString: BrilloMenu
@@ -1247,18 +1246,6 @@ RectTransform:
   m_AnchoredPosition: {x: 837.81445, y: 677.1049}
   m_SizeDelta: {x: 553.7299, y: 383.5812}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &843399820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 843399817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7e63b36cbc58e047ab8f291ba1b5cf1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &901126626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1928,7 +1915,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1300088238}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f00489f54f86ea8488f7565430db2d9a, type: 3}
+  m_Script: {fileID: 11500000, guid: d51b588b154b06c4fa52cff78ac6c05e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1385108347
