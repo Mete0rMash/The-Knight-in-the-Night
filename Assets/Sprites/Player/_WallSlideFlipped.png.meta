@@ -108,9 +108,9 @@ TextureImporter:
       name: _WallSlideFlipped_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 45
         y: 0
-        width: 120
+        width: 42
         height: 80
       alignment: 9
       pivot: {x: 0.5, y: 0.24}
@@ -129,9 +129,9 @@ TextureImporter:
       name: _WallSlideFlipped_1
       rect:
         serializedVersion: 2
-        x: 120
+        x: 163
         y: 0
-        width: 120
+        width: 42
         height: 80
       alignment: 9
       pivot: {x: 0.5, y: 0.24}
@@ -150,9 +150,9 @@ TextureImporter:
       name: _WallSlideFlipped_2
       rect:
         serializedVersion: 2
-        x: 240
+        x: 286
         y: 0
-        width: 120
+        width: 42
         height: 80
       alignment: 9
       pivot: {x: 0.5, y: 0.24}
