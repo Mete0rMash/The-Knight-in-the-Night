@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 22b595ef173a2524fb849f214864196e
+guid: 76309e4630c073d44bb5920d3bf8e691
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,127 +105,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: take_hit_full_0
+      name: MergedImages_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 8
-        width: 29
-        height: 42
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        x: 123
+        y: 385
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d307e38ef51999e4d8d439a5ddea1676
-      internalID: 583988474
+      spriteID: 8215aa53f2b82df46b8f31d2d1e5e139
+      internalID: -2046279692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: take_hit_full_2
+      name: MergedImages_1
       rect:
         serializedVersion: 2
-        x: 155
-        y: 8
-        width: 41
-        height: 51
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        x: 411
+        y: 385
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04b1bfe9dae15e24d8a28a81f56cb0db
-      internalID: 428590443
+      spriteID: 84368059d54a8044ab6c45a577d299ad
+      internalID: 1063245368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: take_hit_full_3
+      name: MergedImages_2
       rect:
         serializedVersion: 2
-        x: 251
-        y: 8
+        x: 125
+        y: 257
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee150fd0df589047877e34f0d8949fc
+      internalID: -686343965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MergedImages_3
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 257
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db12b049925d0c4da4303769c94e447
+      internalID: -1845955060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MergedImages_4
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 138
         width: 44
-        height: 53
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86d15d2b28a2f7f488614866d691f79a
-      internalID: 742323503
+      spriteID: 5e6711ad9c2cd5a42b5b3abad650ddf5
+      internalID: -680584865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: take_hit_full_4
+      name: MergedImages_5
       rect:
         serializedVersion: 2
-        x: 72
-        y: 8
-        width: 41
-        height: 48
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        x: 409
+        y: 138
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44a34cc31e4ba5245bc10773e4f4c95e
-      internalID: 1834537754
+      spriteID: 3ab7f3c4c6067c642802605daa5a470a
+      internalID: -535932445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: take_hit_full_6
+      name: MergedImages_6
       rect:
         serializedVersion: 2
-        x: 339
-        y: 8
-        width: 37
+        x: 123
+        y: 1
+        width: 40
         height: 37
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1c86363f75492746a23707e2ddc6b4e
-      internalID: 963233999
+      spriteID: 3929ec114606c814e8d9901609ed9582
+      internalID: -2012518859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: take_hit_full_7
+      name: MergedImages_7
       rect:
         serializedVersion: 2
-        x: 432
-        y: 8
-        width: 33
+        x: 412
+        y: 1
+        width: 39
         height: 37
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33f548f7791195948af6a34dc5f827e2
-      internalID: -1614198956
+      spriteID: 67e5678146baf674f856fdc57b3a423e
+      internalID: 902250382
       vertices: []
       indices: 
       edges: []
@@ -241,14 +283,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      take_hit_full_3: 742323503
-      take_hit_full_5: 1255337985
-      take_hit_full_2: 428590443
-      take_hit_full_6: 963233999
-      take_hit_full_4: 1834537754
-      take_hit_full_1: -869144356
-      take_hit_full_0: 583988474
-      take_hit_full_7: -1614198956
+      MergedImages_2: -686343965
+      MergedImages_4: -680584865
+      MergedImages_5: -535932445
+      MergedImages_6: -2012518859
+      MergedImages_0: -2046279692
+      MergedImages_1: 1063245368
+      MergedImages_3: -1845955060
+      MergedImages_7: 902250382
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
