@@ -8,4 +8,5 @@ public class MenuData : ScriptableObject
     [Header("Opciones Menu")]
     public bool juegoEnPausa = false;
     public bool creditos = false;
+    public int escenaActualIndex;
 }

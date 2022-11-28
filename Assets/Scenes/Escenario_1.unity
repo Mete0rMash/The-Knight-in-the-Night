@@ -500,7 +500,6 @@ GameObject:
   - component: {fileID: 326243766}
   - component: {fileID: 326243765}
   - component: {fileID: 326243764}
-  - component: {fileID: 326243767}
   m_Layer: 5
   m_Name: VolverAlMenu
   m_TagString: Untagged
@@ -573,8 +572,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 326243767}
-        m_TargetAssemblyTypeName: PausaManager, Assembly-CSharp
+      - m_Target: {fileID: 1413811608}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
         m_MethodName: MenuPrincipal
         m_Mode: 1
         m_Arguments:
@@ -623,19 +622,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326243762}
   m_CullTransparentMesh: 1
---- !u!114 &326243767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 326243762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5f9540998dc9d64a88478de755fa508, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pantallaPausa: {fileID: 1657558633}
 --- !u!1 &354616833
 GameObject:
   m_ObjectHideFlags: 0
@@ -2182,7 +2168,7 @@ SpriteRenderer:
   m_Size: {x: 7.5, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &992240194
@@ -5125,8 +5111,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1268393503}
-        m_TargetAssemblyTypeName: PausaManager, Assembly-CSharp
+      - m_Target: {fileID: 1413811608}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
         m_MethodName: MenuOpciones
         m_Mode: 1
         m_Arguments:

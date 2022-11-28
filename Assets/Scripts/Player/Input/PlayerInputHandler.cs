@@ -196,13 +196,17 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void MenuOpciones()
     {
-        SceneManager.LoadScene("Opciones");
+        SceneManager.LoadScene("Opciones_Menu_Pausa");
+        Time.timeScale = 1f;
     }
 
     public void MenuPrincipal()
     {
+        menuData.escenaActualIndex = SceneManager.GetActiveScene().buildIndex; //probando cambios para el botón continuar, gracias a esto carga escena del menu principal
         SceneManager.LoadScene("Menu_Principal");
-    }
+        Time.timeScale = 1f;
+        PlayerPrefs.SetInt("EscenaGuardada", menuData.escenaActualIndex);//Setea la Escena guardada
+    }   //Todo completamente implementado, falta que al continuar se conserve las posiciones, el boton continua el juego.
     #endregion
 }
 
