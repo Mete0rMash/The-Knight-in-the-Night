@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,6 +18,8 @@ public class PlayerInputHandler : MonoBehaviour
     public bool RollInput { get; private set; }
     public bool RollInputStop { get; private set; }
 
+    public bool[] AttackInputs { get; private set; }
+
     [SerializeField]
     private float inputHoldTime = 0.2f;
 
@@ -30,10 +33,42 @@ public class PlayerInputHandler : MonoBehaviour
     private MenuData menuData;
     #endregion
 
+    private void Start()
+    {
+        int count = Enum.GetValues(typeof(CombatInputs)).Length;
+        AttackInputs = new bool[count];
+    }
+
     private void Update()
     {
         CheckJumpInputHoldTime();
         CheckRollInputHoldTime();
+    }
+
+    public void OnPrimaryAttackInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            AttackInputs[(int)CombatInputs.primary] = true;
+        }
+
+        if (context.canceled)
+        {
+            AttackInputs[(int)CombatInputs.primary] = false;
+        }
+    }
+
+    public void OnSecondaryAttackInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            AttackInputs[(int)CombatInputs.secondary] = true;
+        }
+
+        if (context.canceled)
+        {
+            AttackInputs[(int)CombatInputs.secondary] = false;
+        }
     }
 
     public void OnMoveInput(InputAction.CallbackContext context)
@@ -42,23 +77,8 @@ public class PlayerInputHandler : MonoBehaviour
         {
             RawMovementInput = context.ReadValue<Vector2>();
 
-            if (Mathf.Abs(RawMovementInput.x) > 0.5f)
-            {
-                NormInputX = (int)(RawMovementInput * Vector2.right).normalized.x;
-            }
-            else
-            {
-                NormInputX = 0;
-            }
-
-            if (Mathf.Abs(RawMovementInput.y) > 0.5f)
-            {
-                NormInputY = (int)(RawMovementInput * Vector2.up).normalized.y;
-            }
-            else
-            {
-                NormInputY = 0;
-            }
+            NormInputX = Mathf.RoundToInt(RawMovementInput.x);
+            NormInputY = Mathf.RoundToInt(RawMovementInput.y);
         }
     }
 
@@ -184,4 +204,10 @@ public class PlayerInputHandler : MonoBehaviour
         SceneManager.LoadScene("Menu_Principal");
     }
     #endregion
+}
+
+public enum CombatInputs
+{
+    primary,
+    secondary
 }
