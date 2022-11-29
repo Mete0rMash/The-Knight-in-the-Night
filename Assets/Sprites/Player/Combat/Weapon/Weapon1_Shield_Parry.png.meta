@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 25920155f876933428490f2eda39541d
+guid: 659f92b2735a10a41bae66a44748921a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,127 +105,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: _Attack2_Edited_0
+      name: Weapon1_Shield_Parry_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 120
-        height: 80
+        width: 64
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.24}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b8011ad1b6413f41b78197ad9b6e0ce
-      internalID: -272510258
+      spriteID: 204e5b8e54ea5d14bbbb273ac7e3357e
+      internalID: -1490718540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Attack2_Edited_1
+      name: Weapon1_Shield_Parry_1
       rect:
         serializedVersion: 2
-        x: 120
+        x: 64
         y: 0
-        width: 120
-        height: 80
+        width: 64
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.24}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a1c32118d4e06b439e136f376086d80
-      internalID: -1430338002
+      spriteID: 54c219a8092845a46945d3b3412bc7cd
+      internalID: 2042869595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Attack2_Edited_2
+      name: Weapon1_Shield_Parry_2
       rect:
         serializedVersion: 2
-        x: 240
+        x: 128
         y: 0
-        width: 120
-        height: 80
+        width: 64
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.24}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 623afb83220f2ea45bf060c5cbfa714f
-      internalID: -1971631895
+      spriteID: 8ada7104cd3942c4a815b52f65eff800
+      internalID: 646871584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Attack2_Edited_3
+      name: Weapon1_Shield_Parry_3
       rect:
         serializedVersion: 2
-        x: 360
+        x: 192
         y: 0
-        width: 120
-        height: 80
+        width: 64
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.24}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dfa9d026b34e104b8c718057bd8df6d
-      internalID: -141007043
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: _Attack2_Edited_4
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 120
-        height: 80
-      alignment: 9
-      pivot: {x: 0.5, y: 0.24}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 474869b8a3940444080c8c42f6c54112
-      internalID: -448096927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: _Attack2_Edited_5
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 0
-        width: 120
-        height: 80
-      alignment: 9
-      pivot: {x: 0.5, y: 0.24}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06e7f5c16c6bc564a90d80a0baab0f4a
-      internalID: -28083377
+      spriteID: 214066e7f0cfe904688b200880d34328
+      internalID: 1861050867
       vertices: []
       indices: 
       edges: []
@@ -241,12 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      _Attack2_Edited_3: -141007043
-      _Attack2_Edited_0: -272510258
-      _Attack2_Edited_5: -28083377
-      _Attack2_Edited_1: -1430338002
-      _Attack2_Edited_2: -1971631895
-      _Attack2_Edited_4: -448096927
+      Weapon1_Shield_Parry_3: 1861050867
+      Weapon1_Shield_Parry_1: 2042869595
+      Weapon1_Shield_Parry_2: 646871584
+      Weapon1_Shield_Parry_0: -1490718540
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

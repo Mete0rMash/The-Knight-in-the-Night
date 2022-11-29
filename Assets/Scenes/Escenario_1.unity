@@ -2077,6 +2077,7 @@ GameObject:
   - component: {fileID: 973328717}
   - component: {fileID: 973328719}
   - component: {fileID: 973328718}
+  - component: {fileID: 973328720}
   m_Layer: 3
   m_Name: Base
   m_TagString: Untagged
@@ -2168,9 +2169,21 @@ SpriteRenderer:
   m_Size: {x: 7.5, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &973328720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973328716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75923b1cdcaa1834ca04cf1ee2e8ec28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &992240194
 GameObject:
   m_ObjectHideFlags: 0
@@ -2720,7 +2733,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 7.5, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -2811,13 +2824,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1413811610}
+  - component: {fileID: 1413811609}
+  - component: {fileID: 1413811612}
+  - component: {fileID: 1413811608}
   - component: {fileID: 1413811611}
   - component: {fileID: 1413811615}
-  - component: {fileID: 1413811609}
-  - component: {fileID: 1413811608}
-  - component: {fileID: 1413811612}
   - component: {fileID: 1413811614}
   - component: {fileID: 1413811613}
+  - component: {fileID: 1413811616}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -3156,6 +3170,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1413811616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413811607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4999358b1d8d0044a829988bf9cc8fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons:
+  - {fileID: 1549591747}
 --- !u!1 &1451897277
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0cdceace43af4ca4ba3d47a71704db9c
+guid: c0ab6a622525bae48bfcc52905954e77
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: _Attack_Edited_0
+      name: _Attack_Sword_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94b58a3487a03ef45893011f60bb690b
-      internalID: 1444849402
+      spriteID: dced73cb4eb958641bc8407cd93f96ca
+      internalID: 1793153061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Attack_Edited_1
+      name: _Attack_Sword_1
       rect:
         serializedVersion: 2
         x: 120
@@ -134,56 +134,56 @@ TextureImporter:
         width: 120
         height: 80
       alignment: 9
-      pivot: {x: 0.5, y: 0.24}
+      pivot: {x: 0.57, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85d9145edbad1554d96b7cb2f26c4a82
-      internalID: 1048682307
+      spriteID: 7dd0485b763c87c469290f08dd076aa1
+      internalID: -138879905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Attack_Edited_2
+      name: _Attack_Sword_2
       rect:
         serializedVersion: 2
         x: 240
         y: 0
-        width: 120
+        width: 136
         height: 80
       alignment: 9
-      pivot: {x: 0.5, y: 0.24}
+      pivot: {x: 0.512, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8944353c44a498941a12f2f02127c12a
-      internalID: -695659237
+      spriteID: c45ce299754feb84ca185858e7b936a9
+      internalID: -2041217735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Attack_Edited_3
+      name: _Attack_Sword_3
       rect:
         serializedVersion: 2
-        x: 360
+        x: 375
         y: 0
-        width: 120
+        width: 104
         height: 80
       alignment: 9
-      pivot: {x: 0.5, y: 0.24}
+      pivot: {x: 0.525, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d893aca74ad843499a441905e1cd15c
-      internalID: -495939517
+      spriteID: 9fb5a327e16d7d4409be6fbc390422c7
+      internalID: 1136974640
       vertices: []
       indices: 
       edges: []
@@ -199,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      _Attack_Edited_3: -495939517
-      _Attack_Edited_0: 1444849402
-      _Attack_Edited_2: -695659237
-      _Attack_Edited_1: 1048682307
+      _Attack_Sword_1: -138879905
+      _Attack_Sword_3: 1136974640
+      _Attack_Sword_0: 1793153061
+      _Attack_Sword_2: -2041217735
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
