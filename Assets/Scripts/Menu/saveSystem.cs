@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class saveSystem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void SaveGame()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void LoadGame()
     {
-        
+
     }
+
 }
