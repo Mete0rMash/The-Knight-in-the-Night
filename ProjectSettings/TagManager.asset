@@ -9,6 +9,8 @@ TagManager:
   - MenuMusic
   - BrilloMenu
   - JuegoMusic
+  - SpawnPoint
+  - Rooms
   layers:
   - Default
   - TransparentFX
