@@ -13,11 +13,15 @@ public class saveSystem : MonoBehaviour
     public void SaveGame()
     {
         Vector2 playerPos = playerScript.GetPosition();
+        PlayerPrefs.SetFloat("posX", playerPos.x);
+        PlayerPrefs.SetFloat("posX", playerPos.y);
     }
 
     public void LoadGame()
     {
+        Vector2 playerPos = new Vector2(PlayerPrefs.GetFloat("posX"), PlayerPrefs.GetFloat("posY"));
 
+        playerScript.SetPosition(playerPos);
     }
 
 }

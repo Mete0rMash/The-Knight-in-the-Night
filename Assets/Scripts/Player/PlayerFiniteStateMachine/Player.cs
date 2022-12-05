@@ -221,9 +221,17 @@ public class Player : MonoBehaviour
     }
     #endregion
 
+    #region saveSystem
+
     // para llamar la posición del player en el script de saveSystem
     public Vector2 GetPosition()
     {
         return transform.position;
     }
+
+    public void SetPosition(Vector2 pos)
+    {
+        transform.position = pos;
+    }
+    #endregion
 }
