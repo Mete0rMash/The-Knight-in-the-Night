@@ -143,7 +143,7 @@ PrefabInstance:
     - target: {fileID: 7920904768874944749, guid: 1a31c0687150b5b458f7945c6136593b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.013289
+      value: -2.33
       objectReference: {fileID: 0}
     - target: {fileID: 7920904768874944749, guid: 1a31c0687150b5b458f7945c6136593b,
         type: 3}
@@ -7142,7 +7142,7 @@ PrefabInstance:
     - target: {fileID: 2326424389359124540, guid: 0cfb424145ff5ce479c9cb74e0384a09,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.02
+      value: -3.57
       objectReference: {fileID: 0}
     - target: {fileID: 2326424389359124540, guid: 0cfb424145ff5ce479c9cb74e0384a09,
         type: 3}
@@ -7207,7 +7207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2002279727}
   m_Layer: 0
-  m_Name: Objeto cinematica
+  m_Name: Objetos cinematica
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
