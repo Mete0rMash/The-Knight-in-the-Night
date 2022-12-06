@@ -12,9 +12,11 @@ public class RoomSpawner : MonoBehaviour
     //3 necesitamos un prefab con una puerta a la izquierda
     //4 necesitamos un prefab con una puerta a la derecha
 
-
+    public int count = 1;
 
     [SerializeField] private RoomTemplates templates;
+
+    [SerializeField] Collider2D coll;
 
     private int rand;
     private bool spawned = false;
@@ -23,7 +25,8 @@ public class RoomSpawner : MonoBehaviour
     void Start()
     {
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
-        Invoke("Spawn", 0.2f);
+        coll = this.gameObject.GetComponent<BoxCollider2D>();
+        Invoke("Spawn", 0.5f);
     }
     void Spawn()
     {
@@ -31,9 +34,12 @@ public class RoomSpawner : MonoBehaviour
         {
             if (openSide == 1)
             {
-                //necesitamos un prefab con una puerta abajo
+                //necesitamos un prefab con una puerta abajo                
+
                 rand = Random.Range(0, templates.bottonRooms.Length);
                 Instantiate(templates.bottonRooms[rand], transform.position, templates.bottonRooms[rand].transform.rotation);
+                
+                
             }
             else if (openSide == 2)
             {
@@ -56,12 +62,19 @@ public class RoomSpawner : MonoBehaviour
             spawned = true;
         }
         
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
-    {
+    {        
         if (collision.CompareTag("SpawnPoint"))
         {
-            Destroy(this.gameObject);            
+            if (count == 0)
+            {
+                Destroy(collision.gameObject);
+                Destroy(this.gameObject);
+            }
+            count = 0;
+            
         }
     }
 
