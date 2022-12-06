@@ -23,9 +23,8 @@ public class RoomSpawner : MonoBehaviour
     void Start()
     {
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
-        Invoke("Spawn", 0.1f);
+        Invoke("Spawn", 0.2f);
     }
-
     void Spawn()
     {
         if (spawned == false)
@@ -53,19 +52,16 @@ public class RoomSpawner : MonoBehaviour
                 //necesitamos un prefab con una puerta a la derecha
                 rand = Random.Range(0, templates.rightRooms.Length);
                 Instantiate(templates.rightRooms[rand], transform.position, templates.rightRooms[rand].transform.rotation);
-                
             }
             spawned = true;
         }
         
     }
-
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("SpawnPoint"))
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);            
         }
     }
 
