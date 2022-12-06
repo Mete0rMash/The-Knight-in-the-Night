@@ -220,4 +220,18 @@ public class Player : MonoBehaviour
         transform.Rotate(0.0f, 180.0f, 0.0f);
     }
     #endregion
+
+    #region saveSystem
+
+    // para llamar la posición del player en el script de saveSystem
+    public Vector2 GetPosition()
+    {
+        return transform.position;
+    }
+
+    public void SetPosition(Vector2 pos)
+    {
+        transform.position = pos;
+    }
+    #endregion
 }
