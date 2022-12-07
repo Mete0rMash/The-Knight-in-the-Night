@@ -171,12 +171,12 @@ TextureImporter:
       name: _Attack_Sword_3
       rect:
         serializedVersion: 2
-        x: 375
+        x: 376
         y: 0
-        width: 104
+        width: 103
         height: 80
       alignment: 9
-      pivot: {x: 0.525, y: 0.24}
+      pivot: {x: 0.5205, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
