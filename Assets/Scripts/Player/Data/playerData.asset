@@ -21,8 +21,8 @@ MonoBehaviour:
   coyoteTime: 0.2
   variableJumpHeightMultiplier: 0.5
   wallSlideVelocity: 3
-  startOffset: {x: 0.8, y: 0.8}
-  stopOffset: {x: 0.5, y: 1}
+  startOffset: {x: 0.1, y: 0.8}
+  stopOffset: {x: 1, y: 1}
   rollCooldown: 0.5
   maxHoldTime: 1
   holdTimeScale: 0.25
@@ -32,13 +32,5 @@ MonoBehaviour:
   rollEndYMultiplier: 0.2
   distBetweenAfterImages: 0.5
   crouchMovementVelocity: 5
-  crouchColliderHeight: 1.8
-  standColliderHeight: 2.375
-  groundCheckRadius: 0.2
-  wallCheckDistance: 0.6
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 128
-  whatIsWall:
-    serializedVersion: 2
-    m_Bits: 256
+  crouchColliderHeight: 1.7
+  standColliderHeight: 2.38

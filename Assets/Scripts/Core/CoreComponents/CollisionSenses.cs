@@ -35,7 +35,7 @@ public class CollisionSenses : CoreComponent
 
     public bool Ceiling
     {
-        get => Physics2D.OverlapCircle(ceilingCheck.position, groundCheckRadius, whatIsGround);
+        get => Physics2D.OverlapCircle(ceilingCheck.position, groundCheckRadius, whatIsWall);
     }
 
     public bool Ground
