@@ -15,15 +15,15 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 
   - Water
   - UI
-  - 
   - Ground
   - Wall
-  - 
-  - 
-  - 
+  - Damageable
+  - Dead
+  - Player
+  - Weapon
   - 
   - 
   - 
