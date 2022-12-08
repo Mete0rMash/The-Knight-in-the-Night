@@ -11,6 +11,7 @@ TagManager:
   - JuegoMusic
   - SpawnPoint
   - Rooms
+  - Exit
   layers:
   - Default
   - TransparentFX
