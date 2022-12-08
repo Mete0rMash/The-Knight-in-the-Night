@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6953128708580618026}
   - component: {fileID: -8180051471492607217}
   - component: {fileID: -4532665690160926679}
+  - component: {fileID: -2902211767195243607}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -104,23 +105,26 @@ MonoBehaviour:
   life: 100
   damame: 5
   rangeSight: 5
-  actualState: 0
+  persuiting: 0
   forwardObj: {fileID: 1924494551534921403}
+  player: {fileID: 0}
   speed: 3
-  anim: {fileID: 0}
+  anim: {fileID: -2902211767195243607}
   collider: {fileID: -8180051471492607217}
   ground:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 64
   wall:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   playerMask:
     serializedVersion: 2
     m_Bits: 0
-  distance: 0
+  canMove: 1
+  distanceToPlayer: 0
   distMin: 1
-  distToPlayer: {x: 0, y: 0, z: 0}
+  distToPlayerV3: {x: 0, y: 0, z: 0}
+  facingRight: 0
   lineOfSight: {fileID: 1968826439944957872}
 --- !u!61 &-8180051471492607217
 BoxCollider2D:
@@ -169,6 +173,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &-2902211767195243607
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982116309374725458}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1a9d3aa833d2eb5418a8e1d40c380ce9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2645690337792649582
 GameObject:
   m_ObjectHideFlags: 0
