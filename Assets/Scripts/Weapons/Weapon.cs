@@ -13,6 +13,8 @@ public class Weapon : MonoBehaviour
 
     protected int attackCounter;
 
+    protected Core core;
+
     protected virtual void Awake()
     {
         baseAnimator = transform.Find("Base").GetComponent<Animator>();
@@ -81,8 +83,9 @@ public class Weapon : MonoBehaviour
 
     #endregion
 
-    public void InitializeWeapon(PlayerAttackState state)
+    public void InitializeWeapon(PlayerAttackState state, Core core)
     {
         this.state = state;
+        this.core = core;
     }
 }

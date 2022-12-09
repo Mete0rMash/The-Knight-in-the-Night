@@ -58,3 +58,6 @@ TagManager:
   - name: Wall
     uniqueID: 280304415
     locked: 0
+  - name: Enemy
+    uniqueID: 1516095293
+    locked: 0
