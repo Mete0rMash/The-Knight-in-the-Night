@@ -2860,6 +2860,7 @@ GameObject:
   - component: {fileID: 1413811614}
   - component: {fileID: 1413811613}
   - component: {fileID: 1413811616}
+  - component: {fileID: 1413811617}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -3205,6 +3206,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapons:
   - {fileID: 1549591747}
+--- !u!114 &1413811617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413811607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0daf5bcc4d5fde49bafb6bcebcb304a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barraDeVida: {fileID: 1092349620}
+  vidaActual: 100
+  vidaMaxima: 100
 --- !u!1 &1450009400
 GameObject:
   m_ObjectHideFlags: 0
