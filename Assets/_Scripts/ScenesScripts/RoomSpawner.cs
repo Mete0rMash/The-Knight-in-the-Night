@@ -34,8 +34,7 @@ public class RoomSpawner : MonoBehaviour
         {
             if (openSide == 1)
             {
-                //necesitamos un prefab con una puerta abajo                
-
+                //necesitamos un prefab con una puerta abajo              
                 rand = Random.Range(0, templates.bottonRooms.Length);
                 Instantiate(templates.bottonRooms[rand], transform.position, templates.bottonRooms[rand].transform.rotation);
                 
@@ -71,7 +70,7 @@ public class RoomSpawner : MonoBehaviour
             if (count == 0)
             {
                 Destroy(collision.gameObject);
-                Destroy(this.gameObject);
+                //Destroy(this.gameObject);
             }
             count = 0;
             
