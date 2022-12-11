@@ -12,6 +12,7 @@ TagManager:
   - SpawnPoint
   - Rooms
   - Exit
+  - ParticleContainer
   layers:
   - Default
   - TransparentFX
