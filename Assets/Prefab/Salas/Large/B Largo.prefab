@@ -14485,6 +14485,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Exit
       objectReference: {fileID: 0}
+    - target: {fileID: 2045410165663289097, guid: c58fbca823f22a44eab131d08d6c5858,
+        type: 3}
+      propertyPath: m_TagString
+      value: Exit
+      objectReference: {fileID: 0}
     - target: {fileID: 2402369149961885998, guid: c58fbca823f22a44eab131d08d6c5858,
         type: 3}
       propertyPath: m_RootOrder

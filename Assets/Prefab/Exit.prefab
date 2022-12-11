@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1350163342910882578}
   m_Layer: 0
   m_Name: Exit
-  m_TagString: Untagged
+  m_TagString: Exit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7db1e5accb91374c8384728c9f6ffe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextLevel: 
 --- !u!61 &1350163342910882578
 BoxCollider2D:
   m_ObjectHideFlags: 0

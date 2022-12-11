@@ -227,7 +227,7 @@ PrefabInstance:
     - target: {fileID: 1886187421428580687, guid: 835cd7c083a5f5842ba5178fb35b2442,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1886187421428580687, guid: 835cd7c083a5f5842ba5178fb35b2442,
         type: 3}
@@ -340,6 +340,7 @@ MonoBehaviour:
   - {fileID: 8257020773394136871, guid: 9d3273b2de4183d4cb7c56debe962c08, type: 3}
   - {fileID: 6887867309207730578, guid: f92394686ebd9ab4c9305f8f2956e50a, type: 3}
   - {fileID: 287642711773981123, guid: a03985c5e8c7b2c468a602c02d2c69a9, type: 3}
+  createdRooms: []
 --- !u!4 &544049389
 Transform:
   m_ObjectHideFlags: 0
@@ -353,7 +354,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &929326300
 GameObject:
@@ -621,6 +622,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1977788786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1977788788}
+  - component: {fileID: 1977788787}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1977788787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977788786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfcaf436dfe530b49b41d0246266d3f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  templates: {fileID: 544049388}
+  thisLevel: Nivel
+  count: 10
+--- !u!4 &1977788788
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977788786}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.2936234, y: 0.49338296, z: 0.68460006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1995835286
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,7 +699,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1995835288
 SpriteRenderer:
@@ -737,7 +785,7 @@ PrefabInstance:
     - target: {fileID: 2035669216498084827, guid: 7208a20d098bdc14d8ebd0703547d7d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2035669216498084827, guid: 7208a20d098bdc14d8ebd0703547d7d8,
         type: 3}

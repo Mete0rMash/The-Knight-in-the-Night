@@ -13,8 +13,11 @@ public class RoomSpawner : MonoBehaviour
     //4 necesitamos un prefab con una puerta a la derecha
 
     public int count = 1;
+    int actualRoom = 0;
 
     [SerializeField] private RoomTemplates templates;
+
+    private GameObject lastCreatedRoom;
 
     [SerializeField] Collider2D coll;
 
@@ -36,7 +39,7 @@ public class RoomSpawner : MonoBehaviour
             {
                 //necesitamos un prefab con una puerta abajo              
                 rand = Random.Range(0, templates.bottonRooms.Length);
-                Instantiate(templates.bottonRooms[rand], transform.position, templates.bottonRooms[rand].transform.rotation);
+                lastCreatedRoom = Instantiate(templates.bottonRooms[rand], transform.position, templates.bottonRooms[rand].transform.rotation);
                 
                 
             }
@@ -44,20 +47,24 @@ public class RoomSpawner : MonoBehaviour
             {
                 //necesitamos un prefab con una puerta arriba
                 rand = Random.Range(0, templates.topRooms.Length);
-                Instantiate(templates.topRooms[rand], transform.position, templates.topRooms[rand].transform.rotation);
+                lastCreatedRoom = Instantiate(templates.topRooms[rand], transform.position, templates.topRooms[rand].transform.rotation);
             }
             else if (openSide == 3)
             {
                 //necesitamos un prefab con una puerta a la izquierda
                 rand = Random.Range(0, templates.leftRooms.Length);
-                Instantiate(templates.leftRooms[rand], transform.position, templates.leftRooms[rand].transform.rotation);
+                lastCreatedRoom = Instantiate(templates.leftRooms[rand], transform.position, templates.leftRooms[rand].transform.rotation);
             }
             else if (openSide == 4)
             {
                 //necesitamos un prefab con una puerta a la derecha
                 rand = Random.Range(0, templates.rightRooms.Length);
-                Instantiate(templates.rightRooms[rand], transform.position, templates.rightRooms[rand].transform.rotation);
+                lastCreatedRoom = Instantiate(templates.rightRooms[rand], transform.position, templates.rightRooms[rand].transform.rotation);
             }
+            templates.AddCreatedRoom(lastCreatedRoom, actualRoom);
+            actualRoom += 1;
+
+            
             spawned = true;
         }
         
