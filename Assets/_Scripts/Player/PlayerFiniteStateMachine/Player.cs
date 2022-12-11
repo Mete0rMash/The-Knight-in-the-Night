@@ -33,7 +33,6 @@ public class Player : MonoBehaviour
     public Rigidbody2D RB { get; private set; }
     public Transform RollDirectionIndicator { get; private set; }
     public BoxCollider2D MovementCollider { get; private set; }
-    public PlayerInventory Inventory { get; private set; }
     #endregion
 
     #region OtherVariables
@@ -70,10 +69,6 @@ public class Player : MonoBehaviour
         RB = GetComponent<Rigidbody2D>();
         RollDirectionIndicator = transform.Find("RollDirectionIndicator");
         MovementCollider = GetComponent<BoxCollider2D>();
-        Inventory = GetComponent<PlayerInventory>();
-
-        PrimaryAttackState.SetWeapon(Inventory.weapons[(int)CombatInputs.primary]);
-        //SecondaryAttackState.SetWeapon(Inventory.weapons[(int)CombatInputs.secondary]);
 
         StateMachine.Initialize(IdleState);
     }

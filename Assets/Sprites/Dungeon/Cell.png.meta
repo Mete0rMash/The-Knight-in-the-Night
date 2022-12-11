@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -2658,14 +2658,14 @@ TextureImporter:
       Cell_83: -494766325
       Cell_56: 1545596666
       Cell_101: 84517376
-      Cell_59: 396345428
       Cell_109: 1613262793
+      Cell_59: 396345428
+      Cell_117: -775204711
       Cell_16: 2018338859
       Cell_99: 1001876044
       Cell_111: -1554761234
       Cell_79: 711875282
       Cell_22: 1278303536
-      Cell_117: -775204711
       Cell_107: 50650523
       Cell_110: 1897314142
       Cell_85: -403534983
@@ -2696,9 +2696,9 @@ TextureImporter:
       Cell_7: 78698593
       Cell_67: -1464400726
       Cell_24: -238960580
-      Cell_65: 674023680
-      Cell_55: -942021572
       Cell_88: -1451952577
+      Cell_55: -942021572
+      Cell_65: 674023680
       Cell_1: 1771566289
       Cell_40: -688123177
       Cell_113: -1359722467
@@ -2715,15 +2715,15 @@ TextureImporter:
       Cell_29: 326087184
       Cell_4: -1114065754
       Cell_71: 1291615040
-      Cell_43: -1969519921
       Cell_75: -881912142
       Cell_87: -1628127482
       Cell_62: 1794779045
-      Cell_93: -167276546
+      Cell_43: -1969519921
       Cell_11: 631603954
+      Cell_93: -167276546
       Cell_53: 2101376927
-      Cell_95: -121856399
       Cell_41: 2143335238
+      Cell_95: -121856399
       Cell_44: 902409203
       Cell_58: -1712145921
       Cell_46: 1824555943
