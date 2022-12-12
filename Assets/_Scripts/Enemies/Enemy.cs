@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Collider2D collider; //su collider
     [SerializeField] private LayerMask ground;  //el layer del suelo para poder moverse
     [SerializeField] private LayerMask wall; //el layer de las paredes para poder rebotar
+    [SerializeField] private LayerMask enemyMask;
     [SerializeField] private LayerMask playerMask;
     public bool canMove = true;
     [SerializeField] private float distanceToPlayer;
@@ -128,7 +129,7 @@ public class Enemy : MonoBehaviour
     private void PatrolState()
     {
         //cuando la escala es negativa (< 0) entonces va hacia la derecha, si es positiva (> 0) va hacia la izquierda
-        if (forwardObj.IsTouchingLayers(wall))
+        if (forwardObj.IsTouchingLayers(wall) && forwardObj.IsTouchingLayers(enemyMask))
         {
             InvertScale();
         }        

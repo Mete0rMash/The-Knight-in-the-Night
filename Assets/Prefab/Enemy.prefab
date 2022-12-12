@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -8180051471492607217}
   - component: {fileID: -4532665690160926679}
   - component: {fileID: -2902211767195243607}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -117,9 +117,12 @@ MonoBehaviour:
   wall:
     serializedVersion: 2
     m_Bits: 128
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 256
   playerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   canMove: 1
   distanceToPlayer: 0
   distMin: 1
@@ -202,7 +205,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1968826439944957872}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LineSight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 292910099921728161}
   - component: {fileID: 1924494551534921403}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ColiderDetection
   m_TagString: Untagged
   m_Icon: {fileID: 0}

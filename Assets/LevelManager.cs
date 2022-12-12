@@ -11,6 +11,13 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private string thisLevel;
 
     [SerializeField] int count = 10;
+    public int minRooms;
+
+    [SerializeField] private Transform playerPos;
+    [SerializeField] private GameObject player;
+
+    bool spawned = false;
+    public float time = 0;
     //desde aca se inicia el juego, se instancia al player cundo el nivel se creo
 
     // Start is called before the first frame update
@@ -22,15 +29,19 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(templates.GetRoomsActualCount() >= count)
+        
+        time += Time.deltaTime;
+
+        if(templates.GetRoomsActualCount() >= count || time > 6)
         {
+
             GameObject[] spawners =  GameObject.FindGameObjectsWithTag("SpawnPoint");
             for (int i = 0; i < spawners.Length; i++)
             {
                 Destroy(spawners[i]);
             }
 
-            if (!IsExit())
+            if (!IsExit() && templates.GetRoomsActualCount() < minRooms)
             {
                 SceneManager.LoadScene(thisLevel);
             }
@@ -38,6 +49,13 @@ public class LevelManager : MonoBehaviour
             {
                 //playGame;
                 //instanciar player
+                if (!spawned)
+                {
+                    Instantiate(player, playerPos.position, Quaternion.identity);
+                    spawned = true;
+
+                }
+
             }
 
 

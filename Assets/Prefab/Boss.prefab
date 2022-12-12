@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4173294823743704294}
   - component: {fileID: 264599293958377030}
   - component: {fileID: 116575697718942547}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
