@@ -2498,7 +2498,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pantallaPausa: {fileID: 1657558633}
-  pantallaOpciones: {fileID: 1838044401}
 --- !u!4 &1268393504
 Transform:
   m_ObjectHideFlags: 0
@@ -4935,6 +4934,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4376738845599453607, guid: 56b59dfe6490c2b408232d7b1492da41,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4376738845657091860, guid: 56b59dfe6490c2b408232d7b1492da41,
         type: 3}
       propertyPath: m_IsActive
@@ -5044,6 +5048,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 386
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376738846297544358, guid: 56b59dfe6490c2b408232d7b1492da41,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4376738846698357407, guid: 56b59dfe6490c2b408232d7b1492da41,
         type: 3}
