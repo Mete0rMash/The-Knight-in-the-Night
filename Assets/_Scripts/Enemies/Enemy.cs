@@ -40,6 +40,11 @@ public class Enemy : MonoBehaviour
     }
     void Update()
     {
+        if(player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+        }
+
         if (GetComponent<Collider2D>().IsTouchingLayers(ground))
         {
             if (canMove)
@@ -51,7 +56,8 @@ public class Enemy : MonoBehaviour
         else
         {
             //canMove = false;
-        }        
+        }
+        
     }
     private bool CanSeePlayer()
     {
@@ -115,7 +121,8 @@ public class Enemy : MonoBehaviour
         return val;
     }
     private void States()
-    {        
+    {
+        
         if (persuiting)
         {
             PersuitState();
@@ -129,7 +136,7 @@ public class Enemy : MonoBehaviour
     private void PatrolState()
     {
         //cuando la escala es negativa (< 0) entonces va hacia la derecha, si es positiva (> 0) va hacia la izquierda
-        if (forwardObj.IsTouchingLayers(wall) && forwardObj.IsTouchingLayers(enemyMask))
+        if (forwardObj.IsTouchingLayers(wall) || forwardObj.IsTouchingLayers(enemyMask))
         {
             InvertScale();
         }        
@@ -138,15 +145,18 @@ public class Enemy : MonoBehaviour
             if (!facingRight)
             {
                 this.transform.position += Vector3.left * speed * Time.deltaTime;
-                anim.SetBool("isMoving", true);
-                anim.SetBool("isCloser", false);
+                
             }
             else if (facingRight)
             {
                 this.transform.position += Vector3.right * speed * Time.deltaTime;
-                anim.SetBool("isMoving", true);
-                anim.SetBool("isCloser", false);
+                
             }
+
+            
+            anim.SetBool("isMoving", true);
+            
+            anim.SetBool("isCloser", false);
         } else InvertScale();
     }
     private void InvertScale()
@@ -157,6 +167,7 @@ public class Enemy : MonoBehaviour
     }
     private void PersuitState()
     {
+        //Debug.Log(anim.GetBool("isMoving"));
         distanceToPlayer = Vector2.Distance(this.transform.position, player.transform.position);        
         if(distanceToPlayer > distMin)
         {            
@@ -169,10 +180,10 @@ public class Enemy : MonoBehaviour
         else
         {            
             //canMove = false;
-            Debug.Log("attacking player");
+            //Debug.Log("attacking player");
             anim.SetBool("isMoving", false);
             anim.SetBool("isCloser", true);
-            //anim.SetTrigger("isAttacking");
+            anim.SetTrigger("isAttacking");
             //canMove = true;
         }
         if (this.transform.position.x < player.transform.position.x) //si la posicion del enemigo es mas grande que la posicion del player, entonces el enemigo esta a la derecha del player, si es menor, entonces a la derecha
