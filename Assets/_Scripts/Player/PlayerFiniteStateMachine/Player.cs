@@ -1,3 +1,4 @@
+using LMA.CoreSystem;
 using LMA.Weapons;
 using UnityEngine;
 
@@ -50,6 +51,9 @@ public class Player : MonoBehaviour
 
         primaryWeapon = transform.Find("PrimaryWeapon").GetComponent<Weapon>();
         secondaryWeapon = transform.Find("SecondaryWeapon").GetComponent<Weapon>();
+        
+        primaryWeapon.SetCore(Core);
+        secondaryWeapon.SetCore(Core);
 
         StateMachine = new PlayerStateMachine();
 
@@ -115,7 +119,7 @@ public class Player : MonoBehaviour
 
     #region saveSystem
 
-    // para llamar la posición del player en el script de saveSystem
+    // para llamar la posiciÃ³n del player en el script de saveSystem
     public Vector2 GetPosition()
     {
         return transform.position;

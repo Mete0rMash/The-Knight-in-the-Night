@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Sword_2
   m_EditorClassIdentifier: 
   <NumberOfAttacks>k__BackingField: 1
-  <componentData>k__BackingField:
+  <ComponentData>k__BackingField:
   - rid: 7517925326925594624
+  - rid: 7517925345872314369
   references:
     version: 2
     RefIds:
@@ -23,4 +24,13 @@ MonoBehaviour:
       data:
         <AttackData>k__BackingField:
         - <Sprites>k__BackingField:
-          - {fileID: -2118016722, guid: f438572f543fca041b399b05f5594cbc, type: 3}
+          - {fileID: 466244398, guid: 4bd5080fdbaff35478320e052fcdb6ba, type: 3}
+          - {fileID: -1138283194, guid: 4bd5080fdbaff35478320e052fcdb6ba, type: 3}
+          - {fileID: 1860644552, guid: 4bd5080fdbaff35478320e052fcdb6ba, type: 3}
+          - {fileID: 1259776913, guid: 4bd5080fdbaff35478320e052fcdb6ba, type: 3}
+    - rid: 7517925345872314369
+      type: {class: MovementData, ns: LMA, asm: Assembly-CSharp}
+      data:
+        <AttackData>k__BackingField:
+        - <Direction>k__BackingField: {x: 2, y: 3}
+          <Velocity>k__BackingField: 15

@@ -1,4 +1,5 @@
 using System;
+using LMA.CoreSystem;
 using UnityEngine;
 using LMA.Utilities;
 
@@ -22,7 +23,9 @@ namespace LMA.Weapons
         public GameObject BaseGameObject { get; private set; }
         public GameObject WeaponSpriteGameObject { get; private set; }
 
-        private AnimationEventHandler eventHandler;
+        public AnimationEventHandler EventHandler { get; private set; }
+        
+        public Core Core { get; private set; }
 
         private int currentAttackCounter;
 
@@ -38,6 +41,11 @@ namespace LMA.Weapons
             anim.SetInteger("counter", CurrentAttackCounter);
 
             OnEnter?.Invoke();
+        }
+
+        public void SetCore(Core core)
+        {
+            Core = core;
         }
 
         private void Exit()
@@ -57,7 +65,7 @@ namespace LMA.Weapons
 
             anim = BaseGameObject.GetComponent<Animator>();
 
-            eventHandler = BaseGameObject.GetComponent<AnimationEventHandler>();
+            EventHandler = BaseGameObject.GetComponent<AnimationEventHandler>();
 
             attackCounterResetTimer = new Timer(attackCounterResetCooldown);
         }
@@ -71,13 +79,13 @@ namespace LMA.Weapons
 
         private void OnEnable()
         {
-            eventHandler.OnFinish += Exit;
+            EventHandler.OnFinish += Exit;
             attackCounterResetTimer.OnTimerDone += ResetAttackCounter;
         }
 
         private void OnDisable()
         {
-            eventHandler.OnFinish -= Exit;
+            EventHandler.OnFinish -= Exit;
             attackCounterResetTimer.OnTimerDone -= ResetAttackCounter;
         }
     }

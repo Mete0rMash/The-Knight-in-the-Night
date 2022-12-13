@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using LMA.CoreSystem;
 using UnityEngine;
 
 public class MoveState : State
