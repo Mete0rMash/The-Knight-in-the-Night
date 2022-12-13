@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c39593d0-95e3-4722-9977-44174d52deb8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.The-Knight-in-the-Night/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The-Knight-in-the-Night/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Animations/Bandit/Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Animations/Bandit/Attack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Animations/Bandit/CombatPosture.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Animations/Bandit/CombatPosture.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Animations/Bandit/Hit.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Animations/Bandit/Hit.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Animations/Bandit/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Animations/Bandit/Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Animations/Bandit/Run.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Animations/Bandit/Run.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/AnimatorControllers/Bandit.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/AnimatorControllers/Bandit.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Escenario_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Escenario_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Bandit/Attack.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Bandit/Attack.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Bandit/Combat idle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Bandit/Combat idle.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Bandit/Hurt.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Bandit/Hurt.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Bandit/Idle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Bandit/Idle.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Bandit/Run.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Bandit/Run.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/CoreComponents/CollisionSenses.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/CoreComponents/CollisionSenses.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Enemies/EnemySpecific/Enemy2/Data/E2_BaseData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Enemies/EnemySpecific/Enemy2/Data/E2_BaseData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Enemies/EnemySpecific/Enemy2/Data/E2_DeadStateData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Enemies/EnemySpecific/Enemy2/Data/E2_DeadStateData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerStates/SubStates/PlayerLedgeClimbState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerStates/SubStates/PlayerLedgeClimbState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BossScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BossScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670894614151</updated>
       <workItem from="1670894617798" duration="243000" />
-      <workItem from="1670894894638" duration="5309000" />
+      <workItem from="1670894894638" duration="5606000" />
     </task>
     <servers />
   </component>

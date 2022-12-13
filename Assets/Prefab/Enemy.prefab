@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 384102960415881792}
   - component: {fileID: 5827760571056738767}
   - component: {fileID: 2911555331145647696}
-  - component: {fileID: 728924853}
+  - component: {fileID: 2037261174}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
@@ -270,7 +270,7 @@ MonoBehaviour:
   stunStateData: {fileID: 11400000, guid: feb476734f45df242b04c3b50b211dc5, type: 2}
   deadStateData: {fileID: 11400000, guid: 803c5f6895b75114087f77743674c1bc, type: 2}
   meleeAttackPosition: {fileID: 5447434755564060474}
---- !u!95 &728924853
+--- !u!95 &2037261174
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -565,7 +565,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6504721995744843718}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.044, y: -1.37, z: 0}
+  m_LocalPosition: {x: 0.044, y: -1.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -627,7 +627,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7222986932462580819}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.421, y: -0.019, z: 0}
+  m_LocalPosition: {x: 0.467, y: -0.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -708,7 +708,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8929504557573768119}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.788, y: -1.276, z: 0}
+  m_LocalPosition: {x: 0.883, y: -1.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
