@@ -33,7 +33,6 @@ namespace LMA.CoreSystem
         public float GroundCheckRadius { get => groundCheckRadius; set => groundCheckRadius = value; }
         public float WallCheckDistance { get => wallCheckDistance; set => wallCheckDistance = value; }
         public LayerMask WhatIsGround { get => whatIsGround; set => whatIsGround = value; }
-        public LayerMask WhatIsWall { get => whatIsWall; set => whatIsWall = value; }
 
         [SerializeField] private Transform groundCheck;
 
@@ -48,7 +47,6 @@ namespace LMA.CoreSystem
         [SerializeField] private float wallCheckDistance;
 
         [SerializeField] private LayerMask whatIsGround;
-        [SerializeField] private LayerMask whatIsWall;
 
         #endregion
 
@@ -56,32 +54,32 @@ namespace LMA.CoreSystem
 
         public bool Ceiling
         {
-            get => Physics2D.OverlapCircle(CeilingCheck.position, groundCheckRadius, whatIsWall);
+            get => Physics2D.OverlapCircle(CeilingCheck.position, groundCheckRadius, whatIsGround);
         }
 
         public bool Ground
         {
-            get => Physics2D.OverlapCircle(GroundCheck.position, groundCheckRadius, whatIsGround + whatIsWall);
+            get => Physics2D.OverlapCircle(GroundCheck.position, groundCheckRadius, whatIsGround);
         }
 
         public bool WallFront
         {
-            get => Physics2D.Raycast(WallCheck.position, Vector2.right * Movement.FacingDirection, wallCheckDistance, whatIsWall);
+            get => Physics2D.Raycast(WallCheck.position, Vector2.right * Movement.FacingDirection, wallCheckDistance, whatIsGround);
         }
 
         public bool LedgeHorizontal
         {
-            get => Physics2D.Raycast(LedgeCheckHorizontal.position, Vector2.right * Movement.FacingDirection, wallCheckDistance, whatIsWall);
+            get => Physics2D.Raycast(LedgeCheckHorizontal.position, Vector2.right * Movement.FacingDirection, wallCheckDistance, whatIsGround);
         }
 
         public bool LedgeVertical
         {
-            get => Physics2D.Raycast(LedgeCheckVertical.position, Vector2.down, wallCheckDistance, whatIsWall + whatIsGround);
+            get => Physics2D.Raycast(LedgeCheckVertical.position, Vector2.down, wallCheckDistance, whatIsGround);
         }
 
         public bool WallBack
         {
-            get => Physics2D.Raycast(WallCheck.position, Vector2.right * -Movement.FacingDirection, wallCheckDistance, whatIsWall);
+            get => Physics2D.Raycast(WallCheck.position, Vector2.right * -Movement.FacingDirection, wallCheckDistance, whatIsGround);
         }
     
         #endregion

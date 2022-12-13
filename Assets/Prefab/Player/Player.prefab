@@ -132,9 +132,6 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
-  whatIsWall:
-    serializedVersion: 2
-    m_Bits: 128
 --- !u!1 &1400835755323753401
 GameObject:
   m_ObjectHideFlags: 0

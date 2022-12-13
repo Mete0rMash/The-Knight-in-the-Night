@@ -108,10 +108,10 @@ TextureImporter:
       name: Combat idle_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 2
-        width: 33
-        height: 35
+        x: 0
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,10 +129,10 @@ TextureImporter:
       name: Combat idle_1
       rect:
         serializedVersion: 2
-        x: 53
-        y: 2
-        width: 33
-        height: 35
+        x: 48
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,10 +150,10 @@ TextureImporter:
       name: Combat idle_2
       rect:
         serializedVersion: 2
-        x: 101
-        y: 2
-        width: 33
-        height: 34
+        x: 96
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,10 +171,10 @@ TextureImporter:
       name: Combat idle_3
       rect:
         serializedVersion: 2
-        x: 149
-        y: 2
-        width: 33
-        height: 34
+        x: 144
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
