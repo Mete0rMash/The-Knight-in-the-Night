@@ -248,6 +248,12 @@ PrefabInstance:
       objectReference: {fileID: 13233205}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56b59dfe6490c2b408232d7b1492da41, type: 3}
+--- !u!1 &105327961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4376738845822054011, guid: 56b59dfe6490c2b408232d7b1492da41,
+    type: 3}
+  m_PrefabInstance: {fileID: 105327960}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &544049387
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,6 +341,11 @@ PrefabInstance:
       propertyPath: hpSlider
       value: 
       objectReference: {fileID: 892571462}
+    - target: {fileID: 1400835756669355440, guid: 50e4b83a37e3d7d409ef4dab4eb503ed,
+        type: 3}
+      propertyPath: pantallaPausa
+      value: 
+      objectReference: {fileID: 105327961}
     - target: {fileID: 1400835756669355442, guid: 50e4b83a37e3d7d409ef4dab4eb503ed,
         type: 3}
       propertyPath: m_RootOrder
