@@ -22,10 +22,11 @@ public class DontDestroyAudio : MonoBehaviour
     }
     private void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Escenario_1")
+        if (SceneManager.GetActiveScene().name != "Menu_Principal")
         {
             DontDestroyAudio.instance.GetComponent<AudioSource>().Pause();
         }
+
 
         //Aca abajo esta el arreglo que hice
 
