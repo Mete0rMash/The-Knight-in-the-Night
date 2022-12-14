@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: E2_DodgeStateData
   m_EditorClassIdentifier: 
   dodgeSpeed: 5
-  dodgeTime: 1.2
+  dodgeTime: 1.5
   dodgeCooldown: 8
   dodgeAngle: {x: 1, y: 2}

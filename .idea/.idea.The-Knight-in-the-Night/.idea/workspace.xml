@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c39593d0-95e3-4722-9977-44174d52deb8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.The-Knight-in-the-Night/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The-Knight-in-the-Night/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Animations/Boss/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Animations/Boss/Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Animations/Boss/attack1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Animations/Boss/attack1.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Animations/Boss/attack2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Animations/Boss/attack2.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Animations/Boss/attack3.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Animations/Boss/attack3.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Animations/Boss/death.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Animations/Boss/death.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Animations/Boss/getHit.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Animations/Boss/getHit.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Animations/Boss/run.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Animations/Boss/run.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/AnimatorControllers/Boss.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/AnimatorControllers/Boss.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Cameras.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Cameras.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BossScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BossScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Enemies/EnemySpecific/Enemy2/Data/E2_BaseData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Enemies/EnemySpecific/Enemy2/Data/E2_BaseData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Enemies/EnemySpecific/Enemy2/Data/E2_MeleeAttackStateData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Enemies/EnemySpecific/Enemy2/Data/E2_MeleeAttackStateData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Enemies/EnemySpecific/Enemy2/Data/E2_MoveStateData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Enemies/EnemySpecific/Enemy2/Data/E2_MoveStateData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Enemies/EnemySpecific/Enemy2/Data/E2_PlayerDetectedStateData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Enemies/EnemySpecific/Enemy2/Data/E2_PlayerDetectedStateData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Enemies/EnemySpecific/Enemy2/Data/E2_RangedAttackStateData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Enemies/EnemySpecific/Enemy2/Data/E2_RangedAttackStateData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Projectiles/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Projectiles/Projectile.cs" afterDir="false" />
-    </list>
+    <list default="true" id="c39593d0-95e3-4722-9977-44174d52deb8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,7 +83,7 @@
       <workItem from="1670894617798" duration="243000" />
       <workItem from="1670894894638" duration="6202000" />
       <workItem from="1670971573759" duration="10664000" />
-      <workItem from="1670990886270" duration="2928000" />
+      <workItem from="1670990886270" duration="3533000" />
     </task>
     <servers />
   </component>

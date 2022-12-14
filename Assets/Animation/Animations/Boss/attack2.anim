@@ -27,25 +27,25 @@ AnimationClip:
       value: {fileID: 199037878, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
     - time: 0.3
       value: {fileID: 383771813, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
-    - time: 0.4
-      value: {fileID: 366696085, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
-    - time: 0.5
-      value: {fileID: 1515732018, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
     - time: 0.6
-      value: {fileID: -1598165236, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
+      value: {fileID: 366696085, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
     - time: 0.7
-      value: {fileID: -269913518, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
+      value: {fileID: 1515732018, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
     - time: 0.8
-      value: {fileID: -1159550850, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
+      value: {fileID: -1598165236, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
     - time: 0.9
-      value: {fileID: 974402850, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
+      value: {fileID: -269913518, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
     - time: 1
-      value: {fileID: 434596353, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
+      value: {fileID: -1159550850, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
     - time: 1.1
-      value: {fileID: 2093338389, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
+      value: {fileID: 974402850, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
     - time: 1.2
-      value: {fileID: -1031388711, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
+      value: {fileID: 434596353, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
     - time: 1.3
+      value: {fileID: 2093338389, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
+    - time: 1.4
+      value: {fileID: -1031388711, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
+    - time: 1.8
       value: {fileID: 142293389, guid: f02f65c8de1384848bfa7296a55cf5e0, type: 3}
     attribute: m_Sprite
     path: 
@@ -85,7 +85,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.4
+    m_StopTime: 1.9
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -105,14 +105,14 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.5
+  - time: 0.7
     functionName: TriggerAttack
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.4
+  - time: 1.9
     functionName: FinishAttack
     data: 
     objectReferenceParameter: {fileID: 0}
