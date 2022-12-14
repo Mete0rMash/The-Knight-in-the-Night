@@ -9,17 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu_Principal.unity
     guid: 0dcfab499d49cfc4b8807d17746b40a0
   - enabled: 1
-    path: Assets/Scenes/Escenario_1.unity
-    guid: 5862978ae5b8c7d4ba09f49d46b6e3de
-  - enabled: 1
-    path: Assets/Scenes/Opciones.unity
-    guid: e07de3639b611b842a0dc45b5be30cc8
-  - enabled: 1
-    path: Assets/Scenes/Opciones_Menu_Pausa.unity
-    guid: 1697b3449dc5b754d82a1fe983f6c78a
-  - enabled: 1
-    path: Assets/Scenes/Creditos.unity
-    guid: a75c89123a652f7458734994eaa34b26
+    path: Assets/Scenes/Tutorial.unity
+    guid: 8d196f6520a7ea14c82239f8056d635a
   - enabled: 1
     path: Assets/Scenes/Nivel.unity
     guid: 44b5c700616cfec48a7ad89eba5ed610
@@ -27,8 +18,17 @@ EditorBuildSettings:
     path: Assets/Scenes/BossScene.unity
     guid: 052cdadca36759d41916cc8c2afcbf29
   - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: 8d196f6520a7ea14c82239f8056d635a
+    path: Assets/Scenes/Creditos.unity
+    guid: a75c89123a652f7458734994eaa34b26
+  - enabled: 1
+    path: Assets/Scenes/Opciones.unity
+    guid: e07de3639b611b842a0dc45b5be30cc8
+  - enabled: 0
+    path: Assets/Scenes/Escenario_1.unity
+    guid: 5862978ae5b8c7d4ba09f49d46b6e3de
+  - enabled: 0
+    path: Assets/Scenes/Opciones_Menu_Pausa.unity
+    guid: 1697b3449dc5b754d82a1fe983f6c78a
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: dd87a047d2d0a1945adbda8b23aa602d,
       type: 2}

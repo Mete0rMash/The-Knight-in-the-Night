@@ -18,7 +18,7 @@ public class menuPrincipal : MonoBehaviour
 
     public void EscenaJuego()
     {
-        SceneManager.LoadScene("Escenario_1");
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void CargameNivel(string nombreNivel)
