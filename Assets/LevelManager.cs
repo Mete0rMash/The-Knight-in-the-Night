@@ -13,9 +13,6 @@ public class LevelManager : MonoBehaviour
     [SerializeField] int count = 10;
     public int minRooms;
 
-    [SerializeField] private Transform playerPos;
-    [SerializeField] private GameObject player;
-
     bool spawned = false;
     public float time = 0;
     //desde aca se inicia el juego, se instancia al player cundo el nivel se creo
@@ -45,21 +42,6 @@ public class LevelManager : MonoBehaviour
             {
                 SceneManager.LoadScene(thisLevel);
             }
-            else
-            {
-                //playGame;
-                //instanciar player
-                if (!spawned)
-                {
-                    Instantiate(player, playerPos.position, Quaternion.identity);
-                    spawned = true;
-
-                }
-
-            }
-
-
-
         }
 
         //poner una condicion temporal, porque si son 4 salas nomas nunca llega al count, hacer un else en el if del count y le mandamos
