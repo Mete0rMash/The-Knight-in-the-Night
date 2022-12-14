@@ -12547,6 +12547,11 @@ PrefabInstance:
       propertyPath: hpSlider
       value: 
       objectReference: {fileID: 494550136}
+    - target: {fileID: 1400835756669355440, guid: 50e4b83a37e3d7d409ef4dab4eb503ed,
+        type: 3}
+      propertyPath: pantallaPausa
+      value: 
+      objectReference: {fileID: 1847434359}
     - target: {fileID: 1400835756669355442, guid: 50e4b83a37e3d7d409ef4dab4eb503ed,
         type: 3}
       propertyPath: m_RootOrder
@@ -15186,6 +15191,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1847434359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4376738845822054011, guid: 56b59dfe6490c2b408232d7b1492da41,
+    type: 3}
+  m_PrefabInstance: {fileID: 1782927093}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1853693524
 GameObject:
   m_ObjectHideFlags: 0
