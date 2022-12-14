@@ -5,6 +5,7 @@ namespace LMA.CoreSystem
     public class Death : CoreComponent
     {
         [SerializeField] private GameObject[] deathParticles;
+        [SerializeField] private GameObject Fin;
 
         private ParticleManager ParticleManager => particleManager ? particleManager : core.GetCoreComponent(ref particleManager);
 
@@ -18,6 +19,11 @@ namespace LMA.CoreSystem
             foreach(var particle in deathParticles)
             {
                 ParticleManager.StartParticles(particle);
+            }
+
+            if (gameObject.CompareTag("Boss"))
+            {
+                Fin.SetActive(true);
             }
 
             core.transform.parent.gameObject.SetActive(false);

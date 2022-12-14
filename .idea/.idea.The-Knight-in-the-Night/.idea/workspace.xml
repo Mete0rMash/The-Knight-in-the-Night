@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c39593d0-95e3-4722-9977-44174d52deb8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/CoreComponents/Stats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/CoreComponents/Stats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/CoreComponents/Death.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/CoreComponents/Death.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +86,7 @@
       <workItem from="1670894894638" duration="6202000" />
       <workItem from="1670971573759" duration="10664000" />
       <workItem from="1670990886270" duration="4091000" />
-      <workItem from="1671051105011" duration="1316000" />
+      <workItem from="1671051105011" duration="1777000" />
     </task>
     <servers />
   </component>

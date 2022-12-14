@@ -13,6 +13,7 @@ TagManager:
   - Rooms
   - Exit
   - ParticleContainer
+  - Boss
   layers:
   - Default
   - TransparentFX

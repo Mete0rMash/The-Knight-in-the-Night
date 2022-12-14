@@ -12542,6 +12542,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1400835755323753403, guid: 50e4b83a37e3d7d409ef4dab4eb503ed,
+        type: 3}
+      propertyPath: Fin
+      value: 
+      objectReference: {fileID: 1053165197}
     - target: {fileID: 1400835756375997947, guid: 50e4b83a37e3d7d409ef4dab4eb503ed,
         type: 3}
       propertyPath: hpSlider
@@ -23321,7 +23326,7 @@ GameObject:
   - component: {fileID: 8420456713439268954}
   m_Layer: 10
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24009,6 +24014,7 @@ MonoBehaviour:
   deathParticles:
   - {fileID: 5096148057906189823, guid: e8c0620e39306494385bfb6540453261, type: 3}
   - {fileID: 1962614393226834858, guid: 10a81954f24f4c343815ccb36d6f4f9e, type: 3}
+  Fin: {fileID: 1053165197}
 --- !u!4 &8624374212873730939
 Transform:
   m_ObjectHideFlags: 0
