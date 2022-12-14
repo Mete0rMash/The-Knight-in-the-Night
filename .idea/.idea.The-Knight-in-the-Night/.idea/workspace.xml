@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c39593d0-95e3-4722-9977-44174d52deb8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/CoreComponents/Death.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/CoreComponents/Death.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Timeline/Timeline_Tuto.playable" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Timeline/Timeline_Tuto.playable" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +41,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/TKITN\TKITN.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\ariix\Desktop\TKITN" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="Z:\Games\Unity\2021.3.12f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath Z:\Facultad\UnityProjects\The-Knight-in-the-Night -debugCodeOptimization" />
@@ -86,7 +98,7 @@
       <workItem from="1670894894638" duration="6202000" />
       <workItem from="1670971573759" duration="10664000" />
       <workItem from="1670990886270" duration="4091000" />
-      <workItem from="1671051105011" duration="1777000" />
+      <workItem from="1671051105011" duration="2574000" />
     </task>
     <servers />
   </component>
