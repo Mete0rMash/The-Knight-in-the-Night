@@ -22,7 +22,7 @@ public class DontDestroyGameSound : MonoBehaviour
     //Para Pausar el tema al ir a jugar.
     private void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Menu_Principal")
+        if (SceneManager.GetActiveScene().name != "Nivel")
         {
             DontDestroyGameSound.instance.GetComponent<AudioSource>().Pause();
         }
@@ -30,7 +30,7 @@ public class DontDestroyGameSound : MonoBehaviour
         //Aca abajo esta el arreglo que hice
 
 
-        else if (SceneManager.GetActiveScene().name == "Escenario_1")   // me fijo que sea el menu
+        else if (SceneManager.GetActiveScene().name == "Nivel")   // me fijo que sea el nivel
         {
             if (!DontDestroyGameSound.instance.GetComponent<AudioSource>().isPlaying)   // me fijo que no se este reproduciendo
             {
