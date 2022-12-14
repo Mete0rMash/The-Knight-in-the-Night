@@ -17,16 +17,21 @@ namespace LMA.CoreSystem
         {
             base.Awake();
             
+            hpSlider.maxValue = maxHealth;
+            hpSlider.value = maxHealth;
+            
+            currentHealth = maxHealth;
+
+            if (gameObject.layer.Equals("Player"))
+            {
+                SavePlayerHealth();
+            }
             
             if (gameObject.layer.Equals("Player"))
             {
                 LoadPlayerHealth();
             }
 
-            hpSlider.maxValue = maxHealth;
-            hpSlider.value = maxHealth;
-            
-            currentHealth = maxHealth;
         }
 
         public void DecreaseHealth(float amount)

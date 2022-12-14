@@ -123,6 +123,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &15583138 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9094843349679684347, guid: 56b59dfe6490c2b408232d7b1492da41,
+    type: 3}
+  m_PrefabInstance: {fileID: 1777026301}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &45447928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130,6 +142,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1619761302660939620, guid: 1a31c0687150b5b458f7945c6136593b,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619761302660939620, guid: 1a31c0687150b5b458f7945c6136593b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1982116309374725458, guid: 1a31c0687150b5b458f7945c6136593b,
         type: 3}
       propertyPath: m_Name
@@ -138,7 +160,17 @@ PrefabInstance:
     - target: {fileID: 1982116309374725458, guid: 1a31c0687150b5b458f7945c6136593b,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4621966097271502656, guid: 1a31c0687150b5b458f7945c6136593b,
+        type: 3}
+      propertyPath: m_SortingOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4621966097271502656, guid: 1a31c0687150b5b458f7945c6136593b,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1516095293
       objectReference: {fileID: 0}
     - target: {fileID: 7920904768874944749, guid: 1a31c0687150b5b458f7945c6136593b,
         type: 3}
@@ -7306,7 +7338,7 @@ TilemapCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
@@ -38933,7 +38965,7 @@ TilemapCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
@@ -39362,6 +39394,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1400835756375997947, guid: 50e4b83a37e3d7d409ef4dab4eb503ed,
+        type: 3}
+      propertyPath: hpSlider
+      value: 
+      objectReference: {fileID: 15583138}
+    - target: {fileID: 1400835756669355440, guid: 50e4b83a37e3d7d409ef4dab4eb503ed,
+        type: 3}
+      propertyPath: pantallaPausa
+      value: 
+      objectReference: {fileID: 1777026302}
     - target: {fileID: 1400835756669355442, guid: 50e4b83a37e3d7d409ef4dab4eb503ed,
         type: 3}
       propertyPath: m_RootOrder
@@ -39657,6 +39699,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4376738846297544353, guid: 56b59dfe6490c2b408232d7b1492da41,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376738846297544353, guid: 56b59dfe6490c2b408232d7b1492da41,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4376738846937559573, guid: 56b59dfe6490c2b408232d7b1492da41,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -39679,6 +39731,12 @@ PrefabInstance:
       objectReference: {fileID: 1391893700}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56b59dfe6490c2b408232d7b1492da41, type: 3}
+--- !u!1 &1777026302 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4376738845822054011, guid: 56b59dfe6490c2b408232d7b1492da41,
+    type: 3}
+  m_PrefabInstance: {fileID: 1777026301}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1896867187
 GameObject:
   m_ObjectHideFlags: 0
