@@ -16,6 +16,12 @@ namespace LMA.CoreSystem
         protected override void Awake()
         {
             base.Awake();
+            
+            
+            if (gameObject.layer.Equals("Player"))
+            {
+                LoadPlayerHealth();
+            }
 
             hpSlider.maxValue = maxHealth;
             hpSlider.value = maxHealth;
@@ -37,6 +43,11 @@ namespace LMA.CoreSystem
             }
 
             hpSlider.value = currentHealth;
+
+            if (gameObject.layer.Equals("Player"))
+            {
+                SavePlayerHealth();
+            }
         }
 
         public void IncreaseHealth(float amount)
@@ -44,6 +55,18 @@ namespace LMA.CoreSystem
             currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
             
             hpSlider.value = currentHealth;
+        }
+
+        public void SavePlayerHealth()
+        {
+            PlayerPrefs.SetFloat("PlayerMaxHealth", maxHealth);
+            PlayerPrefs.SetFloat("PlayerCurrentHealth", currentHealth);
+        }
+        
+        private void LoadPlayerHealth()
+        {
+            maxHealth = PlayerPrefs.GetFloat("PlayerMaxHealth");
+            currentHealth = PlayerPrefs.GetFloat("PlayerCurrentHealth");
         }
     }
 }
