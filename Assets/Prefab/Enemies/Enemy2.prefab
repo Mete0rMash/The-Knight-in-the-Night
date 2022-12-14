@@ -91,6 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1276bb169f654a944bd38e1ef4950a3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hpSlider: {fileID: 0}
   maxHealth: 100
 --- !u!1 &6846082260805579044
 GameObject:
@@ -720,9 +721,6 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
-  whatIsWall:
-    serializedVersion: 2
-    m_Bits: 128
 --- !u!1 &7511965117661363413
 GameObject:
   m_ObjectHideFlags: 0

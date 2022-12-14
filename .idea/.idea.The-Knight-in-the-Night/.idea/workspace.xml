@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c39593d0-95e3-4722-9977-44174d52deb8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Components/ComponentData/AttackData/AttackDamage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Components/ComponentData/AttackData/AttackDamage.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Components/ComponentData/WeaponAttackData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Components/ComponentData/WeaponAttackData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Components/WeaponAttack.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Components/WeaponAttack.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/WeaponHitboxToWeapon.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/WeaponHitboxToWeapon.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.The-Knight-in-the-Night/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The-Knight-in-the-Night/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Animations/Player/Combat/Sword/Sword_Attack_1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Animations/Player/Combat/Sword/Sword_Attack_1.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Animations/Player/Combat/Sword/Sword_Attack_2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Animations/Player/Combat/Sword/Sword_Attack_2.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Sword_1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Sword_1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Sword_2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Sword_2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Weapon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Weapon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Escenario_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Escenario_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/WeaponData_SO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/ScriptableObjects/WeaponData_SO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Weapons/AnimationEventHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/AnimationEventHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Cameras.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Cameras.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/CoreComponents/Stats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/CoreComponents/Stats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/BarraVida.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/BarraVida.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +88,7 @@
       <updated>1670894614151</updated>
       <workItem from="1670894617798" duration="243000" />
       <workItem from="1670894894638" duration="6202000" />
-      <workItem from="1670971573759" duration="8074000" />
+      <workItem from="1670971573759" duration="9814000" />
     </task>
     <servers />
   </component>
