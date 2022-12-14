@@ -16,6 +16,7 @@ MonoBehaviour:
   <ComponentData>k__BackingField:
   - rid: 7517925326925594624
   - rid: 7517925345872314369
+  - rid: 7517925365992390657
   references:
     version: 2
     RefIds:
@@ -34,3 +35,10 @@ MonoBehaviour:
         <AttackData>k__BackingField:
         - <Direction>k__BackingField: {x: 2, y: 3}
           <Velocity>k__BackingField: 15
+    - rid: 7517925365992390657
+      type: {class: WeaponAttackData, ns: LMA, asm: Assembly-CSharp}
+      data:
+        <AttackData>k__BackingField:
+        - <Amount>k__BackingField: 20
+          <Angle>k__BackingField: {x: 4, y: 3}
+          <Strength>k__BackingField: 25

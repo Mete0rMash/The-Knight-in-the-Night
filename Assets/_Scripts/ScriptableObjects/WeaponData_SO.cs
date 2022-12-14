@@ -21,5 +21,8 @@ namespace LMA.Weapons
         
         [ContextMenu("Add Movement Data")]
         private void AddMovementData() => ComponentData.Add(new MovementData());
+
+        [ContextMenu("Add Damage Data")]
+        private void AddDamageData() => ComponentData.Add(new WeaponAttackData());
     }
 }

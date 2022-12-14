@@ -375,12 +375,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a31c0687150b5b458f7945c6136593b, type: 3}
---- !u!95 &728924853 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 728924853, guid: 1a31c0687150b5b458f7945c6136593b,
-    type: 3}
-  m_PrefabInstance: {fileID: 728924851}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &817584535
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,9 +788,9 @@ PlayableDirector:
   - key: {fileID: -1186674772244107316, guid: 1c21a0d550f343c4f83211cbc7ff933e, type: 2}
     value: {fileID: 1413811615}
   - key: {fileID: -6396736338049181472, guid: 1c21a0d550f343c4f83211cbc7ff933e, type: 2}
-    value: {fileID: 728924853}
+    value: {fileID: 0}
   - key: {fileID: -3891645060895398320, guid: 1c21a0d550f343c4f83211cbc7ff933e, type: 2}
-    value: {fileID: 728924853}
+    value: {fileID: 0}
   - key: {fileID: 2127482611268283509, guid: 1c21a0d550f343c4f83211cbc7ff933e, type: 2}
     value: {fileID: 661752329}
   m_ExposedReferences:
@@ -1712,6 +1706,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1413811608}
+    - target: {fileID: 4376738845802729516, guid: 56b59dfe6490c2b408232d7b1492da41,
+        type: 3}
+      propertyPath: orthographic size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376738845802729517, guid: 56b59dfe6490c2b408232d7b1492da41,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.704
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376738845802729517, guid: 56b59dfe6490c2b408232d7b1492da41,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.828
+      objectReference: {fileID: 0}
     - target: {fileID: 4376738845848532836, guid: 56b59dfe6490c2b408232d7b1492da41,
         type: 3}
       propertyPath: m_Name
@@ -1771,6 +1780,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376738846937559573, guid: 56b59dfe6490c2b408232d7b1492da41,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.704
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376738846937559573, guid: 56b59dfe6490c2b408232d7b1492da41,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.828
       objectReference: {fileID: 0}
     - target: {fileID: 4376738846937559578, guid: 56b59dfe6490c2b408232d7b1492da41,
         type: 3}
