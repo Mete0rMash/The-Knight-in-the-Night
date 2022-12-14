@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 382142bdd2178c043b5de0dd59e10246, type: 3}
-  m_Name: E2_RangedAttackStateData
+  m_Script: {fileID: 11500000, guid: 4b1917bc9a367d14ba890b8deed9360c, type: 3}
+  m_Name: Boss_DeadStateData
   m_EditorClassIdentifier: 
-  projectile: {fileID: 520525365201432645, guid: b1de7f4baf080a14bbb0ca83f637ddf1,
+  deathChunkParticle: {fileID: 1962614393226834858, guid: 10a81954f24f4c343815ccb36d6f4f9e,
     type: 3}
-  projectileDamage: 10
-  projectileSpeed: 12
-  projectileTravelDistance: 8
+  deathBloodParticle: {fileID: 5096148057906189823, guid: e8c0620e39306494385bfb6540453261,
+    type: 3}

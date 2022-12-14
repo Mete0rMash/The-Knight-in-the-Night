@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca363a58c61549a4eb7b5e86ba17f342, type: 3}
-  m_Name: E2_IdleStateData
+  m_Script: {fileID: 11500000, guid: 2ddba91bfbc9f7741bb39c784ae0c26f, type: 3}
+  m_Name: Boss_StunStateData
   m_EditorClassIdentifier: 
-  minIdleTime: 1
-  maxIdleTime: 2
+  stunTime: 3
+  stunKnockbackTime: 0.2
+  stunKnockbackSpeed: 20
+  stunKnockbackAngle: {x: 1, y: 1}

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca363a58c61549a4eb7b5e86ba17f342, type: 3}
-  m_Name: E2_IdleStateData
+  m_Name: Boss_IdleStateData
   m_EditorClassIdentifier: 
-  minIdleTime: 1
-  maxIdleTime: 2
+  minIdleTime: 0.5
+  maxIdleTime: 1

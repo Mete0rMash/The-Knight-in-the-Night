@@ -22569,23 +22569,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d50138a1aac445546bb835c60fec8156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityData: {fileID: 11400000, guid: 31c79be8ae9737742a4c1b2f93980d5c, type: 2}
+  entityData: {fileID: 11400000, guid: fd3ed28c6c0f4464d9eeaa0b9ff31331, type: 2}
   wallCheck: {fileID: 6601555749355254409}
   ledgeCheck: {fileID: 6601555749210028345}
   playerCheck: {fileID: 6601555750157531014}
   groundCheck: {fileID: 6601555748886061611}
-  moveStateData: {fileID: 11400000, guid: efaec6c3925fe084c88637bdf96375ea, type: 2}
-  idleStateData: {fileID: 11400000, guid: 89174fd49790c1e44a384d9272b9d0e2, type: 2}
-  playerDetectedStateData: {fileID: 11400000, guid: b6120f9dcfd6b564da85d67b16752edc,
+  moveStateData: {fileID: 11400000, guid: 05f90dcae4b00fb478ffc904eb491e03, type: 2}
+  idleStateData: {fileID: 11400000, guid: 9e92a5f2a4999f147b899b43394b4d3c, type: 2}
+  playerDetectedStateData: {fileID: 11400000, guid: 6d45b916d1b7c4948b0efe78fde618e7,
     type: 2}
-  meleeAttackStateData: {fileID: 11400000, guid: 3ccafd82342ab8b44931b42007247206,
+  meleeAttackStateData: {fileID: 11400000, guid: 6d8052caeb09fa041b3c3668fbfd94ea,
     type: 2}
-  lookForPlayerStateData: {fileID: 11400000, guid: 3eb7dd8136c6bff438d56d05519562c4,
+  lookForPlayerStateData: {fileID: 11400000, guid: 364b341fb0535bd49bcb1cafaee5dc4f,
     type: 2}
-  stunStateData: {fileID: 11400000, guid: e6d11d02fa31a7148b22998a73c4a3d7, type: 2}
-  deadStateData: {fileID: 11400000, guid: 68d9e00613b65cd429bfffa09a5ee0e9, type: 2}
-  dodgeStateData: {fileID: 11400000, guid: 1f3b50dab71892643b3e5d0be6065476, type: 2}
-  rangedAttackStateData: {fileID: 11400000, guid: 9c767512c1b8b7144a8a3d7826a3139f,
+  stunStateData: {fileID: 11400000, guid: c9754bf415bcf8146ac024b3d83f8719, type: 2}
+  deadStateData: {fileID: 11400000, guid: 61f78767e2320a148b1abc4f69ba6582, type: 2}
+  dodgeStateData: {fileID: 11400000, guid: 3186e9538d78d014fa351d51099089c3, type: 2}
+  rangedAttackStateData: {fileID: 11400000, guid: 2969e3e90cc82b741877514aab82a97b,
     type: 2}
   meleeAttackPosition: {fileID: 6601555748810207955}
   rangedAttackPosition: {fileID: 6601555749788040604}
