@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using LMA.CoreSystem;
 using UnityEngine;
 
 public class PlayerDashState : PlayerAbilityState
@@ -13,6 +14,12 @@ public class PlayerDashState : PlayerAbilityState
     private Vector2 rollDirection;
     private int rollDirectionInput;
     private Vector2 lastAfterImagePos;
+
+    private Combat Combat
+    {
+        get => combat ?? core.GetCoreComponent(ref combat);
+    }
+    private Combat combat;
 
     public PlayerDashState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
@@ -32,6 +39,8 @@ public class PlayerDashState : PlayerAbilityState
         startTime = Time.unscaledTime;
 
         player.RollDirectionIndicator.gameObject.SetActive(true);
+        
+        Combat.DisableHitBox();
     }
 
     public override void Exit()
@@ -42,6 +51,8 @@ public class PlayerDashState : PlayerAbilityState
         {
             Movement?.SetVelocityY(Movement.CurrentVelocity.y * playerData.rollEndYMultiplier);
         }
+        
+        Combat.EnableHitBox();
     }
 
     public override void LogicUpdate()

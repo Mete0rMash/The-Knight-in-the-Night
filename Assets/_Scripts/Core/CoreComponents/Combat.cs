@@ -15,11 +15,19 @@ namespace LMA.CoreSystem
         private CollisionSenses collisionSenses;
         private Stats stats;
         private ParticleManager particleManager;
+        private BoxCollider2D hitBox;
 
         [SerializeField] private float maxKnockbackTime = 0.2f;
 
         private bool isKnockbackActive;
         private float knockbackStartTime;
+
+        protected override void Awake()
+        {
+            base.Awake();
+
+            hitBox = GetComponent<BoxCollider2D>();
+        }
 
         public override void LogicUpdate()
         {
@@ -48,6 +56,16 @@ namespace LMA.CoreSystem
                 isKnockbackActive = false;
                 Movement.CanSetVelocity = true;
             }
+        }
+
+        public void DisableHitBox()
+        {
+            hitBox.enabled = false;
+        }
+        
+        public void EnableHitBox()
+        {
+            hitBox.enabled = true;
         }
     }
 }

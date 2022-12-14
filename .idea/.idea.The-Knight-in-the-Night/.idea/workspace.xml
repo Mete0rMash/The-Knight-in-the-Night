@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c39593d0-95e3-4722-9977-44174d52deb8" name="Changes" comment="" />
+    <list default="true" id="c39593d0-95e3-4722-9977-44174d52deb8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.The-Knight-in-the-Night/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.The-Knight-in-the-Night/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/CoreComponents/Combat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/CoreComponents/Combat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerStates/SubStates/PlayerDashState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player/PlayerStates/SubStates/PlayerDashState.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +87,7 @@
       <workItem from="1670894617798" duration="243000" />
       <workItem from="1670894894638" duration="6202000" />
       <workItem from="1670971573759" duration="10664000" />
-      <workItem from="1670990886270" duration="3533000" />
+      <workItem from="1670990886270" duration="4091000" />
     </task>
     <servers />
   </component>
