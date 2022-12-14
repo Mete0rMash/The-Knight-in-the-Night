@@ -111,7 +111,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &4867246386710458677
 Rigidbody2D:
   serializedVersion: 4
@@ -244,7 +244,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &4882006199457482152
 Rigidbody2D:
   serializedVersion: 4
@@ -377,7 +377,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &3239279019862503761
 Rigidbody2D:
   serializedVersion: 4
@@ -510,7 +510,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &174726274734555354
 Rigidbody2D:
   serializedVersion: 4
@@ -643,7 +643,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &7930878646695615005
 Rigidbody2D:
   serializedVersion: 4
@@ -776,7 +776,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &5173971561962956552
 Rigidbody2D:
   serializedVersion: 4
@@ -909,7 +909,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &8760992285974137191
 Rigidbody2D:
   serializedVersion: 4
@@ -1180,7 +1180,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &7930225208836952786
 Rigidbody2D:
   serializedVersion: 4
@@ -1313,7 +1313,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &8023858049565311791
 Rigidbody2D:
   serializedVersion: 4
@@ -1446,7 +1446,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &454250251346297255
 Rigidbody2D:
   serializedVersion: 4
@@ -1579,7 +1579,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &8086446688711984718
 Rigidbody2D:
   serializedVersion: 4
@@ -1796,7 +1796,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &4570687349502873609
 Rigidbody2D:
   serializedVersion: 4
@@ -1929,7 +1929,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &920765525797122096
 Rigidbody2D:
   serializedVersion: 4
@@ -2062,7 +2062,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &5756852959662228131
 Rigidbody2D:
   serializedVersion: 4
@@ -2195,7 +2195,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &4705197270657899524
 Rigidbody2D:
   serializedVersion: 4
@@ -2328,7 +2328,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &4928521827158765413
 Rigidbody2D:
   serializedVersion: 4
@@ -2461,7 +2461,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &5061823633877498628
 Rigidbody2D:
   serializedVersion: 4
@@ -2594,7 +2594,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &3387865611883818349
 Rigidbody2D:
   serializedVersion: 4
@@ -2727,7 +2727,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &5955103625202712190
 Rigidbody2D:
   serializedVersion: 4
@@ -2860,7 +2860,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &4289100708115489455
 Rigidbody2D:
   serializedVersion: 4
@@ -2993,7 +2993,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &6535647824455604673
 Rigidbody2D:
   serializedVersion: 4
@@ -3126,7 +3126,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &7606208691457358185
 Rigidbody2D:
   serializedVersion: 4
@@ -3343,7 +3343,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &89981700934888104
 Rigidbody2D:
   serializedVersion: 4
@@ -3476,7 +3476,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &681858562088651782
 Rigidbody2D:
   serializedVersion: 4
@@ -3609,7 +3609,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &8754941758383221382
 Rigidbody2D:
   serializedVersion: 4
@@ -3742,7 +3742,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &110482696748653897
 Rigidbody2D:
   serializedVersion: 4
@@ -3875,7 +3875,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &7168071544751691271
 Rigidbody2D:
   serializedVersion: 4
@@ -4008,7 +4008,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &4073279607372143933
 Rigidbody2D:
   serializedVersion: 4
@@ -4141,7 +4141,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &5355710535452775235
 Rigidbody2D:
   serializedVersion: 4
@@ -4274,7 +4274,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &5706158302775411125
 Rigidbody2D:
   serializedVersion: 4
@@ -4407,7 +4407,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &2902350424131738984
 Rigidbody2D:
   serializedVersion: 4
@@ -4540,7 +4540,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &3934678819368363688
 Rigidbody2D:
   serializedVersion: 4
@@ -4673,7 +4673,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &6878726983899788656
 Rigidbody2D:
   serializedVersion: 4
@@ -4806,7 +4806,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &1270800842028788587
 Rigidbody2D:
   serializedVersion: 4
@@ -4939,7 +4939,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &4661435227434305637
 Rigidbody2D:
   serializedVersion: 4
@@ -5072,7 +5072,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &3071958269641598181
 Rigidbody2D:
   serializedVersion: 4
@@ -5205,7 +5205,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &2052567038503014857
 Rigidbody2D:
   serializedVersion: 4
@@ -5338,7 +5338,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &2243036548385250546
 Rigidbody2D:
   serializedVersion: 4
@@ -5471,7 +5471,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &7997755542068534448
 Rigidbody2D:
   serializedVersion: 4
@@ -5701,7 +5701,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &3948363619240613940
 Rigidbody2D:
   serializedVersion: 4
@@ -5872,7 +5872,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &1979090228525132517
 Rigidbody2D:
   serializedVersion: 4
@@ -6005,7 +6005,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &9116854686116252876
 Rigidbody2D:
   serializedVersion: 4
@@ -6222,7 +6222,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &4047181710932093947
 Rigidbody2D:
   serializedVersion: 4
@@ -6355,7 +6355,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &8248961599702521366
 Rigidbody2D:
   serializedVersion: 4
@@ -6488,7 +6488,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &562133759832719842
 Rigidbody2D:
   serializedVersion: 4
@@ -6705,7 +6705,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &4540964879917457331
 Rigidbody2D:
   serializedVersion: 4
@@ -6838,7 +6838,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &5938970625078653063
 Rigidbody2D:
   serializedVersion: 4
@@ -6971,7 +6971,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &6806695349978910440
 Rigidbody2D:
   serializedVersion: 4
@@ -7104,7 +7104,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &7371222320166596468
 Rigidbody2D:
   serializedVersion: 4
@@ -7237,7 +7237,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &5968870360835440234
 Rigidbody2D:
   serializedVersion: 4
@@ -7455,7 +7455,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &8751761634421097926
 Rigidbody2D:
   serializedVersion: 4
@@ -7588,7 +7588,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &8318147973687031083
 Rigidbody2D:
   serializedVersion: 4
@@ -7721,7 +7721,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &554946869049635015
 Rigidbody2D:
   serializedVersion: 4
@@ -7854,7 +7854,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &5311755307652912987
 Rigidbody2D:
   serializedVersion: 4
@@ -7987,7 +7987,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &4827317229211445105
 Rigidbody2D:
   serializedVersion: 4
@@ -8204,7 +8204,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &1170508158437215048
 Rigidbody2D:
   serializedVersion: 4
@@ -8337,7 +8337,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &3666547512710035867
 Rigidbody2D:
   serializedVersion: 4
@@ -8470,7 +8470,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &7650699023005978967
 Rigidbody2D:
   serializedVersion: 4
@@ -8603,7 +8603,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &5115176178413970734
 Rigidbody2D:
   serializedVersion: 4
@@ -8833,7 +8833,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &3542999728650430756
 Rigidbody2D:
   serializedVersion: 4
@@ -9050,7 +9050,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &1796802852153413119
 Rigidbody2D:
   serializedVersion: 4
@@ -9183,7 +9183,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &7487133099994940613
 Rigidbody2D:
   serializedVersion: 4
@@ -9446,7 +9446,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &6364021103256069129
 Rigidbody2D:
   serializedVersion: 4
@@ -9579,7 +9579,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &6798062594869572550
 Rigidbody2D:
   serializedVersion: 4
@@ -9712,7 +9712,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &6489774786170375699
 Rigidbody2D:
   serializedVersion: 4
@@ -9845,7 +9845,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &9108910213789076234
 Rigidbody2D:
   serializedVersion: 4
@@ -9978,7 +9978,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &8714166600171385806
 Rigidbody2D:
   serializedVersion: 4
@@ -10111,7 +10111,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &3002802060325175101
 Rigidbody2D:
   serializedVersion: 4
@@ -10244,7 +10244,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &8199840117204682293
 Rigidbody2D:
   serializedVersion: 4
@@ -10377,7 +10377,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &7941394088771542468
 Rigidbody2D:
   serializedVersion: 4
@@ -10510,7 +10510,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &6857979436096476284
 Rigidbody2D:
   serializedVersion: 4
@@ -10643,7 +10643,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &5191518214964824840
 Rigidbody2D:
   serializedVersion: 4
@@ -10776,7 +10776,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &4652062400221196007
 Rigidbody2D:
   serializedVersion: 4
@@ -10909,7 +10909,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &3009664579297142120
 Rigidbody2D:
   serializedVersion: 4
@@ -11042,7 +11042,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &6282979641082378627
 Rigidbody2D:
   serializedVersion: 4
@@ -11175,7 +11175,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &7053795388316603008
 Rigidbody2D:
   serializedVersion: 4
@@ -11308,7 +11308,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &4674660410489984002
 Rigidbody2D:
   serializedVersion: 4
@@ -11441,7 +11441,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &853016444423120777
 Rigidbody2D:
   serializedVersion: 4
@@ -11574,7 +11574,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &5281489245161744640
 Rigidbody2D:
   serializedVersion: 4
@@ -11707,7 +11707,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &2018270760187322631
 Rigidbody2D:
   serializedVersion: 4
@@ -11840,7 +11840,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &1920843191905532753
 Rigidbody2D:
   serializedVersion: 4
@@ -11973,7 +11973,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &9062668373599249333
 Rigidbody2D:
   serializedVersion: 4
@@ -12190,7 +12190,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &756344707008958306
 Rigidbody2D:
   serializedVersion: 4
@@ -12323,7 +12323,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &6766252484941578863
 Rigidbody2D:
   serializedVersion: 4
@@ -12456,7 +12456,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &9032970311898151552
 Rigidbody2D:
   serializedVersion: 4
@@ -12589,7 +12589,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &1291932207343461231
 Rigidbody2D:
   serializedVersion: 4
@@ -12722,7 +12722,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &1125155913661909498
 Rigidbody2D:
   serializedVersion: 4
@@ -12855,7 +12855,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &2633089180223150914
 Rigidbody2D:
   serializedVersion: 4
@@ -12988,7 +12988,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &196846934058203672
 Rigidbody2D:
   serializedVersion: 4
@@ -13121,7 +13121,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &8432339858808984852
 Rigidbody2D:
   serializedVersion: 4
@@ -13254,7 +13254,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &4263892817162553509
 Rigidbody2D:
   serializedVersion: 4
@@ -13387,7 +13387,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &1571387691672569687
 Rigidbody2D:
   serializedVersion: 4
@@ -13520,7 +13520,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &7604292999997329118
 Rigidbody2D:
   serializedVersion: 4
@@ -13653,7 +13653,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &4752774505829056008
 Rigidbody2D:
   serializedVersion: 4
@@ -13786,7 +13786,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &3205104053026157283
 Rigidbody2D:
   serializedVersion: 4
@@ -13919,7 +13919,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &4459536742754849189
 Rigidbody2D:
   serializedVersion: 4
@@ -14052,7 +14052,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &2552153330588067779
 Rigidbody2D:
   serializedVersion: 4
@@ -14185,7 +14185,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &9005833803489830693
 Rigidbody2D:
   serializedVersion: 4
@@ -14318,7 +14318,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.05
 --- !u!50 &3875615208918701981
 Rigidbody2D:
   serializedVersion: 4
