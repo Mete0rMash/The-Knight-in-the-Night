@@ -8,6 +8,7 @@ public class Projectile : MonoBehaviour
 
     private float speed;
     private float travelDistance;
+    private float damage;
     private float xStartPos;
 
     [SerializeField]
@@ -57,13 +58,18 @@ public class Projectile : MonoBehaviour
     {
         if (!hasHitGround)
         {
-            Collider2D damageHit = Physics2D.OverlapCircle(damagePosition.position, damageRadius, whatIsPlayer);
+            Collider2D[] damageHit = Physics2D.OverlapCircleAll(damagePosition.position, damageRadius, whatIsPlayer);
             Collider2D groundHit = Physics2D.OverlapCircle(damagePosition.position, damageRadius, whatIsGround);
 
-            if (damageHit)
+            foreach (Collider2D collider in damageHit)
             {
-                //damageHit.transform.SendMessage("Damage", attackDetails);
-                Destroy(gameObject);
+                IDamageable damageable = collider.GetComponent<IDamageable>();
+
+                if (damageable != null)
+                {
+                    damageable.Damage(damage);
+                    Destroy(gameObject);
+                }
             }
 
             if (groundHit)
@@ -86,7 +92,7 @@ public class Projectile : MonoBehaviour
     {
         this.speed = speed;
         this.travelDistance = travelDistance;
-        //attackDetails.damageAmount = damage;
+        this.damage = damage;
     }
 
     private void OnDrawGizmos()
