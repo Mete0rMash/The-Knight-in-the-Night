@@ -22,11 +22,18 @@ public class DontDestroyAudio : MonoBehaviour
     }
     private void Update()
     {
-        if (SceneManager.GetActiveScene().name != "Menu_Principal")
+        if (SceneManager.GetActiveScene().name == "Nivel")
         {
             DontDestroyAudio.instance.GetComponent<AudioSource>().Pause();
+            Debug.Log("Entra");
         }
-      
+
+        if (SceneManager.GetActiveScene().name == "Tutorial")
+        {
+            DontDestroyAudio.instance.GetComponent<AudioSource>().Pause();
+            Debug.Log("Entra");
+        }
+
 
 
         //Aca abajo esta el arreglo que hice

@@ -17,7 +17,7 @@ namespace LMA
             {
                 instance = this;
                 DontDestroyOnLoad(this.gameObject);
-            } //Me reproduce el tema pero al volver al menú se corta... Arreglado.
+            } 
         }
 
         //Para Pausar el tema al ir a jugar.
