@@ -482,8 +482,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\n\n\n\nPROGRAMACI\xD3N:\n\nMateo Schiavina\nAriel Sfeir\nMart\xEDn Leibkowicz\n\nARTE
-    VISUAL:\n\nMateo Schiavina\n\nDOCUMENTACI\xD3N:\n\nMart\xEDn Leibkowicz\n\nLEVEL
-    DESIGN:\n\nAriel Sfeir\n\n\xA9 2022 LMA GAMES. \nTodos los derechos reservados."
+    VISUAL:\n\nAriel Sfeir\n\nDOCUMENTACI\xD3N:\n\nMart\xEDn Leibkowicz\n\nLEVEL
+    DESIGN:\n\nMateo Schiavina\n\n\xA9 2022 LMA GAMES. \nTodos los derechos reservados."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
