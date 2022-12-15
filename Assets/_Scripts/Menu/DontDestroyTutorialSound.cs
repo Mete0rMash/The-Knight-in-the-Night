@@ -23,7 +23,7 @@ namespace LMA
         //Para Pausar el tema al ir a jugar.
         private void Update()
         {
-            if (SceneManager.GetActiveScene().name != "Tutorial")
+            if (SceneManager.GetActiveScene().name != "Tutorial" && SceneManager.GetActiveScene().name != "Nivel")
             {
                 DontDestroyTutorialSound.instance.GetComponent<AudioSource>().Pause();
             }
@@ -31,7 +31,7 @@ namespace LMA
             //Aca abajo esta el arreglo que hice
 
 
-            else if (SceneManager.GetActiveScene().name == "Tutorial")   // me fijo que sea el tutorial
+            else if (SceneManager.GetActiveScene().name == "Tutorial" && SceneManager.GetActiveScene().name == "Nivel")   // me fijo que sea el tutorial
             {
                 if (!DontDestroyAudio.instance.GetComponent<AudioSource>().isPlaying)   // me fijo que no se este reproduciendo
                 {
