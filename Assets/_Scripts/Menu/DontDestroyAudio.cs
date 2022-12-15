@@ -26,6 +26,7 @@ public class DontDestroyAudio : MonoBehaviour
         {
             DontDestroyAudio.instance.GetComponent<AudioSource>().Pause();
         }
+      
 
 
         //Aca abajo esta el arreglo que hice
